@@ -9,7 +9,7 @@ class SiteController extends Controller{
   }
 
   public function index(){
-    $this->set('title','Vinyl and Chill');
+    $this->set('title','Relate');
   }
 
 }
