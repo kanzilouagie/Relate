@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  <link rel="stylesheet" href="style.css">
   <script>
     WebFont.load({
       custom: {

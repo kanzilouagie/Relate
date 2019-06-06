@@ -12,9 +12,13 @@
       'controller' => 'Site',
       'action' => 'verhalen'
     ),
-    'twotales' => array(
-      'controller' => 'Site',
-      'action' => 'twotales'
+    'admin' => array(
+      'controller' => 'Admin',
+      'action' => 'index'
+    ),
+    'logged_in' => array(
+      'controller' => 'Admin',
+      'action' => 'logged_in'
     ),
 
     );
