@@ -25,13 +25,44 @@ body {
   /* background-color: #232222; */
 }
 
+.home {
+  background-color: #232222;
+  width: 100vw;
+  height: 100vw;
+}
+
+header{
+  background-color: #232222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.navigation{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation_logo{
+  color: white;
+}
+
+.navigation a{
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 .boxke {
-  border: 1px solid white;
+  border: 1px solid black;
   margin: 2rem;
   padding: 2rem;
   width: 30rem;
   border-radius: 2rem;
-  color: white;
+  color: black;
 }
 
 h1 {
