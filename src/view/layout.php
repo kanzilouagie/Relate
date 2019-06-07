@@ -24,4 +24,37 @@
   <?php  echo($content);  ?>
   <?php echo($js) ?>
 </body>
+
+<footer>
+
+  <div class="footer_logo"></div>
+
+  <div class="footer_links">
+    <section>
+      <h3 class="footer_title">links:</h3>
+      <p>www.operaballet.be</p>
+      <p>www.vlaanderen.be</p>
+      <p>www.antwerpen.be</p>
+      <p>www.gent.be</p>
+    </section>
+    <section>
+      <form action="POST">
+        <input type="text">
+        <input type="submit">
+      </form>
+    </section>
+    <section>
+    <h3 class="footer_title">navigatie:</h3>
+      <p>www.operaballet.be</p>
+      <p>www.vlaanderen.be</p>
+      <p>www.antwerpen.be</p>
+      <p>www.gent.be</p>
+    </section>
+  </div>
+
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur maxime a quo distinctio. Cum tempora aliquid, magni minus vitae porro atque incidunt cupiditate dignissimos enim ab molestiae omnis in!</p>
+  </div>
+
+</footer>
 </html>

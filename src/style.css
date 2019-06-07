@@ -1,6 +1,7 @@
 @import './css/reset.css';
 @import './css/vars.css';
 @import './css/admin.css';
+@import './css/footer.css';
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 html {
@@ -27,8 +28,8 @@ body {
 
 .home {
   background-color: #232222;
-  width: 100vw;
-  height: 100vw;
+  width: 10rem;
+  height: 10rem;
 }
 
 header{
@@ -79,3 +80,7 @@ h1 {
   margin: 2rem;
 }
 
+.footer_links{
+  display: flex;
+  flex-direction: column;
+}
