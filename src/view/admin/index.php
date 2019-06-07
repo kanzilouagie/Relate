@@ -13,4 +13,5 @@
     <input class='inputfield' type='password' name='password' placeholder='Wachtwoord' required /><br /><br />
     <input class='sb' type='submit' value='login' name='action' />
   </form>
+  <a href=""><p>Forgot your password?</p></a>
 </div>
