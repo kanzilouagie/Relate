@@ -7,4 +7,4 @@
 <input type="file" name="file">
 <button type="submit" name="submit">Upload Video</button>
 </form>
-  </section>
+</section>
