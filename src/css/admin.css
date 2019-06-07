@@ -8,6 +8,7 @@
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border-radius: 2rem;
+
 }
 
 .login-form .sb {
@@ -34,6 +35,12 @@
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+
+}
+
+.login-form a{
+  font-size: 1rem;
+
 }
 
 .login-form .sb:hover {
