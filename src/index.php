@@ -12,6 +12,11 @@
       'controller' => 'Site',
       'action' => 'verhalen'
     ),
+
+    'twotales' => array(
+      'controller' => 'Site',
+      'action' => 'twotales'
+    ),
     'admin' => array(
       'controller' => 'Admin',
       'action' => 'index'
