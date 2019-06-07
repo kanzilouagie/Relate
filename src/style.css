@@ -1,5 +1,6 @@
 @import './css/reset.css';
 @import './css/vars.css';
+@import './css/admin.css';
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 html {
@@ -25,16 +26,20 @@ body {
 }
 
 .boxke {
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 2rem;
   padding: 2rem;
   width: 30rem;
+  border-radius: 2rem;
+  color: white;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 5rem;
   margin: 2rem 0;
+  color: white;
+  text-transform: uppercase;
 }
 
 .verhalen_grid{
@@ -42,3 +47,4 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   margin: 2rem;
 }
+

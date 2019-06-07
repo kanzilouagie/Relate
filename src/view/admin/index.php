@@ -6,8 +6,11 @@
     <p>Wachtwoord en/of login is incorrect.</p>
   </div>
   <?php }}}; ?>
-<form class="form_login__form" method='POST' action=''>
-      <input class='inputfield' type='text' name='username' placeholder='Gebruikersnaam' required /><br /><br />
-      <input class='inputfield' type='password' name='password' placeholder='Wachtwoord' required /><br /><br />
-      <input class='submitform' type='submit' value='login' name='action' />
-    </form>
+
+<div class= "login-form">
+  <form class="form_login__form" method='POST' action=''>
+    <input class='inputfield' type='text' name='username' placeholder='Gebruikersnaam' required /><br /><br />
+    <input class='inputfield' type='password' name='password' placeholder='Wachtwoord' required /><br /><br />
+    <input class='sb' type='submit' value='login' name='action' />
+  </form>
+</div>
