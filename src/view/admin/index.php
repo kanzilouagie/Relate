@@ -18,5 +18,4 @@
       <a href=""><p>Forgot your password?</p></a>
     </div>
   </div>
-
 </div>

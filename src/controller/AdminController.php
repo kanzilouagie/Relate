@@ -57,6 +57,37 @@ class AdminController extends Controller{
     $id = $_GET['id'];
     $verhaal = $verhaalDAO->selectById($id);
     $this->set('verhaal', $verhaal);
+
+    if(isset($_POST['verwijder'])) {
+      $verhaalDAO->delete($id);
+      header("Location: index.php?page=logged_in");
+
+    }
+
+    if(isset($_POST['offline'])) {
+      $data = array(
+        'story_name' => $_POST['char_name'],
+        'story_content' => $_POST['story'],
+        'published' => "false",
+      );
+      $verhaalDAO->update($id, $data);
+      header("Location: index.php?page=logged_in");
+
+    }
+
+    if(isset($_POST['publiceer'])) {
+      $data = array(
+        'story_name' => $_POST['char_name'],
+        'story_content' => $_POST['story'],
+        'published' => 1
+      );
+      $verhaalDAO->update($id, $data);
+      header("Location: index.php?page=logged_in");
+
+    }
+
+
+
   }
 
 }

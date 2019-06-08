@@ -54,7 +54,9 @@ class SiteController extends Controller{
               'type' => "video",
               'story_name' => $_POST['char_name'],
               'story_content' => $fileName,
-              'published' => "false"
+              'published' => "false",
+              'anonymous' => $_POST['anonymous'],
+              'relates' => 0
             );
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");
@@ -99,7 +101,9 @@ class SiteController extends Controller{
               'type' => "audio",
               'story_name' => $_POST['char_name'],
               'story_content' => $fileName,
-              'published' => "false"
+              'published' => "false",
+              'anonymous' => $_POST['anonymous'],
+              'relates' => 0
             );
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");
@@ -126,7 +130,9 @@ class SiteController extends Controller{
               'type' => "text",
               'story_name' => $_POST['char_name'],
               'story_content' => $_POST['story'],
-              'published' => "false"
+              'published' => "false",
+              'anonymous' => $_POST['anonymous'],
+              'relates' => 0
             );
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");

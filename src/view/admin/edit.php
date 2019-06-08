@@ -1,11 +1,48 @@
-<h1>edit</h1>
-  <div class="boxke">
-  <p><?php echo $verhaal['name'] ?></p>
-  <p><?php echo $verhaal['email'] ?></p>
-  <p><?php echo $verhaal['type'] ?></p>
-  <p><?php echo $verhaal['story_name'] ?></p>
-  <p><?php echo $verhaal['story_content'] ?></p>
-  <p><?php echo $verhaal['published'] ?></p>
-  </div>
+<?php if($verhaal['type'] == "text") { ?>
+<section>
+<form method="POST" enctype="multipart/form-data">
+<label for="name">character name</label>
+<input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">
+<label for="story">Story</label>
+<textarea name="story" cols="30" rows="10"><?php echo $verhaal['story_content'] ?></textarea>
+<button type="submit" name="verwijder">Verwijder</button>
+<button type="submit" name="offline">Laat nog offline</button>
+<button type="submit" name="publiceer">Publiceer</button>
+</form>
+</section>
 
-  </div>
+<?php } ?>
+
+<?php if($verhaal['type'] == "video") { ?>
+<section>
+<form method="POST" enctype="multipart/form-data">
+<label for="name">character name</label>
+<input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">
+<input type="text" name="story" value="<?php echo $verhaal['story_content'] ?>">
+<video width="320" height="240" controls>
+  <source src="./assets/videos/stories/<?php echo $verhaal['story_content'] ?>" type="video/mp4">
+</video>
+<button type="submit" name="verwijder">Verwijder</button>
+<button type="submit" name="offline">Laat nog offline</button>
+<button type="submit" name="publiceer">Publiceer</button>
+</form>
+</section>
+
+<?php } ?>
+
+<?php if($verhaal['type'] == "audio") { ?>
+<section>
+<form method="POST" enctype="multipart/form-data">
+<label for="name">character name</label>
+<input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">
+<input type="text" name="story" value="<?php echo $verhaal['story_content'] ?>">
+<audio controls>
+<source src="./assets/audio/stories/<?php echo $verhaal['story_content'] ?>" type="audio/mpeg">
+</audio>
+<button type="submit" name="verwijder">Verwijder</button>
+<button type="submit" name="offline">Laat nog offline</button>
+<button type="submit" name="publiceer">Publiceer</button>
+</form>
+</section>
+
+<?php } ?>
