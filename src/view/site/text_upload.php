@@ -6,6 +6,8 @@
 <form method="POST" enctype="multipart/form-data">
 <label for="name">character name</label>
 <input type="text" name="char_name">
+<label for="file">omslagfoto</label>
+<input type="file" name="file">
 <label for="story">Story</label>
 <textarea name="story" cols="30" rows="10"></textarea>
 <label for="name">full name</label>

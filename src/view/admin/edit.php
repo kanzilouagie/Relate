@@ -3,6 +3,8 @@
 <form method="POST" enctype="multipart/form-data">
 <label for="name">character name</label>
 <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">
+<label for="omslagfoto"></label>
+<img src="./assets/images/stories/<?php echo $verhaal['text_pic'] ?>" alt="<?php echo $verhaal['text_pic'] ?>">
 <label for="story">Story</label>
 <textarea name="story" cols="30" rows="10"><?php echo $verhaal['story_content'] ?></textarea>
 <button type="submit" name="verwijder">Verwijder</button>
