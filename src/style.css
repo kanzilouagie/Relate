@@ -26,10 +26,36 @@ body {
   /* background-color: #232222; */
 }
 
-.home {
+.fold{
+  display: flex;
+
+}
+
+.fold_black {
   background-color: #232222;
-  width: 10rem;
-  height: 10rem;
+  width: 70vw;
+  height:70vh;
+}
+
+.fold_black_img{
+  position: relative;
+  right: 0;
+  height: 70vh;
+  float: right
+}
+
+.fold_red_img{
+  position: relative;
+  right: 0;
+  height: 70vh;
+  float: left
+}
+
+
+.fold_red {
+  background-color: #EF4352;
+  width: 30vw;
+  height:70vh;
 }
 
 header{
@@ -37,7 +63,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .navigation{
@@ -80,7 +106,3 @@ h1 {
   margin: 2rem;
 }
 
-.footer_links{
-  display: flex;
-  flex-direction: column;
-}
