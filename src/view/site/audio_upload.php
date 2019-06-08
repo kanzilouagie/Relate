@@ -15,3 +15,4 @@
 <button type="submit" name="submit">Upload Audio</button>
 </form>
 </section>
+<?php include '__footer.php'?>

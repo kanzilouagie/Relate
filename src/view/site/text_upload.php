@@ -15,3 +15,4 @@
 <button type="submit" name="submit">Upload Text</button>
 </form>
 </section>
+<?php include '__footer.php'?>
