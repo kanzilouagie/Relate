@@ -12,6 +12,6 @@
 <input type="text" name="fullname">
 <label for="name">email</label>
 <input type="email" name="email">
-<button type="submit" name="submit">Upload Audio</button>
+<button type="submit" name="submit">Upload Text</button>
 </form>
 </section>
