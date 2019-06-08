@@ -115,6 +115,25 @@ class SiteController extends Controller{
   }
   }
 
+  public function text_upload() {
+    $verhaalDAO = new VerhaalDAO();
+    $this->set('title','Upload text');
+
+    if(isset($_POST['submit'])) {
+            $data = array(
+              'name' => $_POST['fullname'],
+              'email' => $_POST['email'],
+              'type' => "text",
+              'story_name' => $_POST['char_name'],
+              'story_content' => $_POST['story'],
+              'published' => "false"
+            );
+            $verhaalDAO->insert($data);
+            header("Location: index.php?page=twotales");
+
+  }
+  }
+
 
 
 }
