@@ -25,6 +25,18 @@
       'controller' => 'Admin',
       'action' => 'logged_in'
     ),
+    'video_upload' => array(
+      'controller' => 'Site',
+      'action' => 'video_upload'
+    ),
+    'audio_upload' => array(
+      'controller' => 'Site',
+      'action' => 'audio_upload'
+    ),
+    'text_upload' => array(
+      'controller' => 'Site',
+      'action' => 'text_upload'
+    )
 
     );
   if(empty($_GET['page'])){

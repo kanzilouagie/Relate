@@ -23,46 +23,98 @@ class SiteController extends Controller{
     $verhaalDAO = new VerhaalDAO();
     $this->set('title','TwoTales');
 
+  }
+
+  public function video_upload() {
+    $verhaalDAO = new VerhaalDAO();
+    $this->set('title','Upload video');
+
     if(isset($_POST['submit'])) {
-        $file = $_FILES['file'];
+      $file = $_FILES['file'];
+      $fileName = $_FILES['file']['name'];
+      $fileTmpName = $_FILES['file']['tmp_name'];
+      $fileSize = $_FILES['file']['size'];
+      $fileError = $_FILES['file']['error'];
+      $fileType = $_FILES['file']['type'];
 
-        $fileName = $_FILES['file']['name'];
-        $fileTmpName = $_FILES['file']['tmp_name'];
-        $fileSize = $_FILES['file']['size'];
-        $fileError = $_FILES['file']['error'];
-        $fileType = $_FILES['file']['type'];
+      $fileExt = explode('.', $fileName);
+      $fileActualExt = strtolower(end($fileExt));
 
-        $fileExt = explode('.', $fileName);
-        $fileActualExt = strtolower(end($fileExt));
+      $allowed = array('mp4', 'webm', 'ogg');
 
-        $allowed = array('mp4', 'webm', 'ogg');
-
-        if(in_array($fileActualExt, $allowed)) {
-          if($fileError === 0 ) {
-            if($fileSize < 200000000) {
-              $fileNameNew = uniqid('', true).".".$fileActualExt;
-              $fileDestination = "./assets/videos/stories/".$fileName;
-              move_uploaded_file($fileTmpName, $fileDestination);
-              $data = array(
-                'name' => $_POST['fullname'],
-                'email' => $_POST['email'],
-                'type' => "video",
-                'story_name' => $_POST['char_name'],
-                'story_content' => $fileName,
-                'published' => 1
-              );
-              $verhaalDAO->insert($data);
-              header("Location: index.php?page=twotales");
-            } else {
-              echo "file is too big";
-            }
+      if(in_array($fileActualExt, $allowed)) {
+        if($fileError === 0 ) {
+          if($fileSize < 200000000) {
+            $fileNameNew = uniqid('', true).".".$fileActualExt;
+            $fileDestination = "./assets/videos/stories/".$fileName;
+            move_uploaded_file($fileTmpName, $fileDestination);
+            $data = array(
+              'name' => $_POST['fullname'],
+              'email' => $_POST['email'],
+              'type' => "video",
+              'story_name' => $_POST['char_name'],
+              'story_content' => $fileName,
+              'published' => "false"
+            );
+            $verhaalDAO->insert($data);
+            header("Location: index.php?page=twotales");
           } else {
-            echo "there was an error uploading your file";
+            echo "file is too big";
           }
         } else {
-          echo "upload a mp4 file";
+          echo "there was an error uploading your file";
         }
-    }
-
+      } else {
+        echo "upload a mp4 file";
+      }
   }
+  }
+
+  public function audio_upload() {
+    $verhaalDAO = new VerhaalDAO();
+    $this->set('title','Upload audio');
+
+    if(isset($_POST['submit'])) {
+      $file = $_FILES['file'];
+      $fileName = $_FILES['file']['name'];
+      $fileTmpName = $_FILES['file']['tmp_name'];
+      $fileSize = $_FILES['file']['size'];
+      $fileError = $_FILES['file']['error'];
+      $fileType = $_FILES['file']['type'];
+
+      $fileExt = explode('.', $fileName);
+      $fileActualExt = strtolower(end($fileExt));
+
+      $allowed = array('mp3', 'wav');
+
+      if(in_array($fileActualExt, $allowed)) {
+        if($fileError === 0 ) {
+          if($fileSize < 200000000) {
+            $fileNameNew = uniqid('', true).".".$fileActualExt;
+            $fileDestination = "./assets/audio/stories/".$fileName;
+            move_uploaded_file($fileTmpName, $fileDestination);
+            $data = array(
+              'name' => $_POST['fullname'],
+              'email' => $_POST['email'],
+              'type' => "audio",
+              'story_name' => $_POST['char_name'],
+              'story_content' => $fileName,
+              'published' => "false"
+            );
+            $verhaalDAO->insert($data);
+            header("Location: index.php?page=twotales");
+          } else {
+            echo "file is too big";
+          }
+        } else {
+          echo "there was an error uploading your file";
+        }
+      } else {
+        echo "upload a mp3 or wav file";
+      }
+  }
+  }
+
+
+
 }
