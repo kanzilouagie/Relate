@@ -20,6 +20,7 @@ class SiteController extends Controller{
   }
 
   public function twotales(){
+    $verhaalDAO = new VerhaalDAO();
     $this->set('title','TwoTales');
 
     if(isset($_POST['submit'])) {
@@ -38,11 +39,19 @@ class SiteController extends Controller{
 
         if(in_array($fileActualExt, $allowed)) {
           if($fileError === 0 ) {
-            echo $fileSize;
             if($fileSize < 200000000) {
               $fileNameNew = uniqid('', true).".".$fileActualExt;
-              $fileDestination = "./assets/img/stories/videos/".$fileName;
+              $fileDestination = "./assets/videos/stories/".$fileName;
               move_uploaded_file($fileTmpName, $fileDestination);
+              $data = array(
+                'name' => $_POST['fullname'],
+                'email' => $_POST['email'],
+                'type' => "video",
+                'story_name' => $_POST['char_name'],
+                'story_content' => $fileName,
+                'published' => 1
+              );
+              $verhaalDAO->insert($data);
               header("Location: index.php?page=twotales");
             } else {
               echo "file is too big";

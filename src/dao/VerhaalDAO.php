@@ -20,8 +20,9 @@ class VerhaalDAO extends DAO{
 
   public function insert($data){
     $errors = $this->validate($data);
+    var_dump($errors);
     if(empty($errors)){
-      $sql = "INSERT INTO `verhalen` (`name`,`email`, `type`, `story_name`, `story_content`, `published`) VALUES (:name, :email, :type, :story_name, :story_content, :published)";
+      $sql = "INSERT INTO `Verhalen` (`name`,`email`, `type`, `story_name`, `story_content`, `published`) VALUES (:name, :email, :type, :story_name, :story_content, :published)";
       $stmt = $this->pdo->prepare($sql);
       $stmt->bindValue(':name', $data['name']);
       $stmt->bindValue(':email', $data['email']);
@@ -42,7 +43,7 @@ class VerhaalDAO extends DAO{
     $stmt->bindValue(':id', $id);
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_ASSOC);
-	}
+    }
 
 
   public function validate($data){
