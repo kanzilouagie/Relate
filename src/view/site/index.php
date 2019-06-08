@@ -9,5 +9,3 @@
   <img class="fold_red_img" src="./assets/images/header_Home2.png" alt="" >
   </div>
 </section>
-
-
