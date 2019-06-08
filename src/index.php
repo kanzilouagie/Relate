@@ -36,6 +36,10 @@
     'text_upload' => array(
       'controller' => 'Site',
       'action' => 'text_upload'
+    ),
+    'edit' => array(
+      'controller' => 'Admin',
+      'action' => 'edit'
     )
 
     );

@@ -16,3 +16,11 @@
     <input class="sb" type='submit' value='register' name='action' />
   </form>
 </div>
+
+<div>
+  <?php foreach ($verhalen as $verhaal) {
+    if($verhaal['published'] == false) { ?>
+    <p><a href="index.php?page=edit&id=<?php echo $verhaal['id'] ?>"><?php echo $verhaal['story_name'] ?> - <?php echo $verhaal['name'] ?> - <?php echo $verhaal['type'] ?></a></p>
+    <?php }}  ?>
+
+  </div>

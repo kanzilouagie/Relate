@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/Controller.php';
 require_once __DIR__ . '/../dao/AdminDAO.php';
+require_once __DIR__ . '/../dao/VerhaalDAO.php';
 
 class AdminController extends Controller{
 
@@ -45,10 +46,17 @@ class AdminController extends Controller{
       session_destroy();
       header('Location: index.php?page=admin');
     }
+    $verhaalDAO = new VerhaalDAO();
+    $verhalen = $verhaalDAO->selectAll();
+    $this->set('verhalen', $verhalen);
   }
 
-  public function twotales(){
-    $this->set('title','TwoTales');
+  public function edit(){
+    $this->set('title','edit story');
+    $verhaalDAO = new VerhaalDAO();
+    $id = $_GET['id'];
+    $verhaal = $verhaalDAO->selectById($id);
+    $this->set('verhaal', $verhaal);
   }
 
 }
