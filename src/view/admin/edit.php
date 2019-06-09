@@ -57,7 +57,7 @@
 
     <?php if($verhaal['type'] == "audio") { ?>
       <section>
-      <form method="POST" enctype="multipart/form-data">
+      <form class="dashboard_flex" method="POST" enctype="multipart/form-data">
         <div class="dashboard_item edit">
           <img
             src="./assets/images/<?php if($verhaal['text_pic'] == "video" || $verhaal['text_pic'] == "audio") {  echo "default.png"; } else { echo "stories/".$verhaal['text_pic']; }?>"
@@ -68,15 +68,13 @@
           <button class="dashboard_item__button offline" type="submit" name="offline">Laat nog offline</button>
           <button class="dashboard_item__button verwijder" type="submit" name="verwijder">Verwijder</button>
         </div>
-        <label for="name">character name</label>
-        <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">
-        <input type="text" name="story" value="<?php echo $verhaal['story_content'] ?>">
+        <div class="dashboard_item__main">
+        <p>Mijn naam is  <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">, en dit is mijn verhaal:</p>
+        <input class="hidden" type="text" name="story" value="<?php echo $verhaal['story_content'] ?>">
         <audio controls>
           <source src="./assets/audio/stories/<?php echo $verhaal['story_content'] ?>" type="audio/mpeg">
         </audio>
-        <button type="submit" name="verwijder">Verwijder</button>
-        <button type="submit" name="offline">Laat nog offline</button>
-        <button type="submit" name="publiceer">Publiceer</button>
+        </div>
       </form>
     </section>
 
