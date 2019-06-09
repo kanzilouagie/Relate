@@ -1,6 +1,7 @@
 <?php include '__navigation.php'?>
 <main>
   <section class="admin__top_header">
+  <button class="toggle_menu">menu</button>
     <a href="#">Voeg een nieuwe administrator toe</a>
     <a class="submitform" href="index.php?page=logged_in&actie=loguit">Uitloggen</a>
   </section>
