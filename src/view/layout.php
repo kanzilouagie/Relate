@@ -38,7 +38,7 @@
   <title><?php echo($title);   ?></title>
   <?php echo($css);  ?>
 </head>
-<body>
+<body <?php echo($backgroundcolor);  ?>>
   <?php  echo($content);  ?>
   <?php echo($js) ?>
 </body>

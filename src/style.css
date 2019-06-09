@@ -298,6 +298,11 @@ h1 {
 
 .admin_header {
   position: fixed;
+  z-index: 998;
+
+  @media only screen and (max-width: 1030px) {
+    display: none;
+  }
 }
 
 .admin_home {
@@ -338,7 +343,7 @@ main {
 
 .admin__top_header {
   background: white;
-  width: calc(100% - 30rem);
+  /* width: calc(100% - 30rem); */
   padding: 2rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .3);
   display: flex;
@@ -368,12 +373,27 @@ main {
     width: 20px;
     height: 20px;
   }
+
+  @media only screen and (max-width: 1030px) {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .logout_text {
+    display: none;
+  }
 }
 
 .dashboard_main {
-  width: calc(100% - 30rem);
+  /* width: calc(100% - 30rem); */
   padding: 3rem;
   margin-left: 30rem;
+
+  @media only screen and (max-width: 1030px) {
+    margin-left: 0;
+  }
 }
 
 .addadmin {
@@ -443,12 +463,16 @@ main {
 }
 
 .storyitems {
-  height: 100vh;
+  height: 100%;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media only screen and (max-width: 1030px) {
+    justify-content: center;
+  }
 }
 
 .kruimelpad {
@@ -517,8 +541,18 @@ main {
 
 .toggle_menu {
   display: none;
+  border: 0;
+  background: none;
+
+  & img {
+    width: 3rem;
+  }
 
   @media only screen and (max-width: 1030px) {
     display: block;
   }
+}
+
+.adminbg {
+  background: #f7f7f7;
 }

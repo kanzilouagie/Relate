@@ -10,6 +10,7 @@ class AdminController extends Controller{
   }
 
   public function index(){
+    $this->set('backgroundcolor', '');
     $this->set('title','admin login');
     if(!empty($_POST['action'])) {
       if($_POST['action'] === 'login') {
@@ -38,6 +39,7 @@ class AdminController extends Controller{
     $verhaalDAO = new VerhaalDAO();
     $verhalen = $verhaalDAO->selectAll();
     $this->set('verhalen', $verhalen);
+    $this->set('backgroundcolor', 'class="adminbg"');
   }
 
   public function edit(){
@@ -46,7 +48,7 @@ class AdminController extends Controller{
     $id = $_GET['id'];
     $verhaal = $verhaalDAO->selectById($id);
     $this->set('verhaal', $verhaal);
-
+    $this->set('backgroundcolor', 'class="adminbg"');
     if(isset($_POST['verwijder'])) {
       $verhaalDAO->delete($id);
       header("Location: index.php?page=logged_in");
@@ -84,6 +86,7 @@ class AdminController extends Controller{
       header('Location: index.php?page=admin');
     }
     $this->set('title','Add Administrator');
+    $this->set('backgroundcolor', 'class="adminbg"');
     $adminDAO = new AdminDAO();
     if(isset($_POST['action'])) {
       if($_POST['action'] === 'register') {
@@ -106,6 +109,7 @@ class AdminController extends Controller{
       header('Location: index.php?page=admin');
     }
     $this->set('title','Alle Inzendingen');
+    $this->set('backgroundcolor', 'class="adminbg"');
     if(isset($_GET['actie'])) {
       session_destroy();
       header('Location: index.php?page=admin');
@@ -120,6 +124,7 @@ class AdminController extends Controller{
       header('Location: index.php?page=admin');
     }
     $this->set('title','Gepubliceerde Inzendingen');
+    $this->set('backgroundcolor', 'class="adminbg"');
     if(isset($_GET['actie'])) {
       session_destroy();
       header('Location: index.php?page=admin');

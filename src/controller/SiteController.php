@@ -10,6 +10,7 @@ class SiteController extends Controller{
 
   public function index(){
     $this->set('title','Relate');
+    $this->set('backgroundcolor', '');
     $verhaalDAO = new VerhaalDAO();
     $verhalen = $verhaalDAO->selectAll();
     $this->set('verhalen', $verhalen);
@@ -20,15 +21,18 @@ class SiteController extends Controller{
     $verhalen = $verhaalDAO->selectAll();
     $this->set('verhalen', $verhalen);
     $this->set('title','Verhalen');
+    $this->set('backgroundcolor', '');
   }
 
   public function twotales(){
     $verhaalDAO = new VerhaalDAO();
     $this->set('title','TwoTales');
+    $this->set('backgroundcolor', '');
 
   }
 
   public function video_upload() {
+    $this->set('backgroundcolor', '');
     $verhaalDAO = new VerhaalDAO();
     $this->set('title','Upload video');
 
@@ -77,6 +81,7 @@ class SiteController extends Controller{
   }
 
   public function audio_upload() {
+    $this->set('backgroundcolor', '');
     $verhaalDAO = new VerhaalDAO();
     $this->set('title','Upload audio');
 
@@ -125,6 +130,7 @@ class SiteController extends Controller{
   }
 
   public function text_upload() {
+    $this->set('backgroundcolor', '');
     $verhaalDAO = new VerhaalDAO();
     $this->set('title','Upload text');
 
