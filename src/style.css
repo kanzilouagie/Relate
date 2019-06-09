@@ -213,7 +213,7 @@ h1 {
   & a {
     min-width: 25rem;
     border-radius: 3rem 0 0 3rem;
-    background: #fd294c;
+    background: #232222;
     padding: 1.5rem 3rem;
     margin: 1rem 0;
     text-decoration: none;
@@ -341,4 +341,8 @@ main {
 .kruimelpad {
   color: #fd294c;
   font-weight: bold;
+}
+
+.admin_active {
+  background: #fd294c !important;
 }

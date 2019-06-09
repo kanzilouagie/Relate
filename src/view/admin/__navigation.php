@@ -10,16 +10,16 @@
       <section class="admin_nav__inzendingen">
         <h2>Inzendingen</h2>
         <div>
-          <a href="index.php?page=logged_in">Nieuwe inzendingen</a>
-          <a href="index.php?page=alleinzendingen">Alle inzendingen</a>
-          <a href="index.php?page=gepubliceerd">Gepubliceerd</a>
+          <a <?php if($_GET['page'] == "logged_in") { echo "class='admin_active'"; } ?> href="index.php?page=logged_in">Nieuwe inzendingen</a>
+          <a <?php if($_GET['page'] == "alleinzendingen") { echo "class='admin_active'"; } ?> href="index.php?page=alleinzendingen">Alle inzendingen</a>
+          <a <?php if($_GET['page'] == "gepubliceerd") { echo "class='admin_active'"; } ?> href="index.php?page=gepubliceerd">Gepubliceerd</a>
         </div>
       </section>
 
       <section class="admin_nav__hulp">
         <h2>Hulp</h2>
         <div>
-        <a href="index.php?page=addadmin">Nieuwe admin toevoegen</a>
+        <a <?php if($_GET['page'] == "addadmin") { echo "class='admin_active'"; } ?> href="index.php?page=addadmin">Nieuwe admin toevoegen</a>
         </div>
       </section>
     </div>
