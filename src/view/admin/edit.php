@@ -1,7 +1,8 @@
 <?php include '__navigation.php'?>
 <main>
   <section class="admin__top_header">
-    <p class="kruimelpad"><button class="toggle_menu">menu</button><a href="index.php?page=logged_in">Detailinformatie</a> -
+  <button class="toggle_menu">menu</button>
+    <p class="kruimelpad"><a href="index.php?page=logged_in">Detailinformatie</a> -
       <?php echo $verhaal['name'] ?>(<?php echo $verhaal['email'] ?>)</p>
     <a class="submitform" href="index.php?page=logged_in&actie=loguit">Uitloggen</a>
   </section>
