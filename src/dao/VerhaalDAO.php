@@ -22,7 +22,7 @@ class VerhaalDAO extends DAO{
     $errors = $this->validate($data);
     var_dump($errors);
     if(empty($errors)){
-      $sql = "INSERT INTO `Verhalen` (`name`,`email`, `type`, `story_name`, `story_content`, `published`) VALUES (:name, :email, :type, :story_name, :story_content, :published)";
+      $sql = "INSERT INTO `verhalen` (`name`,`email`, `type`, `story_name`, `story_content`, `published`, `relates`, `anonymous`, `text_pic`) VALUES (:name, :email, :type, :story_name, :story_content, :published, :relates, :anonymous, :text_pic)";
       $stmt = $this->pdo->prepare($sql);
       $stmt->bindValue(':name', $data['name']);
       $stmt->bindValue(':email', $data['email']);
@@ -30,11 +30,25 @@ class VerhaalDAO extends DAO{
       $stmt->bindValue(':story_name', $data['story_name']);
       $stmt->bindValue(':story_content', $data['story_content']);
       $stmt->bindValue(':published', $data['published']);
+      $stmt->bindValue(':relates', $data['relates']);
+      $stmt->bindValue(':anonymous', $data['anonymous']);
+      $stmt->bindValue(':text_pic', $data['text_pic']);
       if($stmt->execute()){
         return $this->selectById($this->pdo->lastInsertId());
       }
     }
     return false;
+  }
+
+  public function update($id, $data) {
+    $sql = "  UPDATE `verhalen` SET `story_name` = :story_name, `story_content` = :story_content, `published` = :published WHERE `id` = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    $stmt->bindValue(':story_name', $data['story_name']);
+    $stmt->bindValue(':story_content', $data['story_content']);
+    $stmt->bindValue(':published', $data['published']);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
   public function delete($id) {

@@ -18,3 +18,4 @@
     <?php }}  ?>
 
   </div>
+  <?php include '__footer.php'?>

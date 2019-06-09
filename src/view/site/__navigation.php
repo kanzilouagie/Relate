@@ -1,4 +1,4 @@
-<header>
+<header class="header_home">
   <div class="navigation_logo">test</div>
   <nav class="navigation">
     <a href="index.php?page=home">home</a>

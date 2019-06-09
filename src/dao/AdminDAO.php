@@ -5,7 +5,7 @@ require_once(__DIR__ . '/DAO.php');
 class AdminDAO extends DAO{
 
   public function selectById($id){
-    $sql = "SELECT * FROM `Admin` WHERE `id` = :id";
+    $sql = "SELECT * FROM `admin` WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id', $id);
     $stmt->execute();
@@ -16,7 +16,7 @@ class AdminDAO extends DAO{
     $errors = $this->validate($data);
     if(empty($errors)){
       if($this->checkExist($data['username']) === 0) {
-      $sql = "INSERT INTO `Admin` (`username`,`password`) VALUES (:username, :password)";
+      $sql = "INSERT INTO `admin` (`username`,`password`) VALUES (:username, :password)";
       $stmt = $this->pdo->prepare($sql);
       $stmt->bindValue(':username', $data['username']);
       $stmt->bindValue(':password', $data['password']);
@@ -32,7 +32,7 @@ class AdminDAO extends DAO{
   public function checkLogin($data) {
     $errors = $this->validateLogin($data);
     if(empty($errors)){
-    $sql = "SELECT * FROM `Admin` WHERE `username` = :username";
+    $sql = "SELECT * FROM `admin` WHERE `username` = :username";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':username', $data['username']);
     $stmt->execute();

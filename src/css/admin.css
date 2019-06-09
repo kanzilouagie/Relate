@@ -1,38 +1,38 @@
-.login_wrapper{
+.login_wrapper {
   background-color: #232222;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .login-form {
-  background: #ffffff;
+  background: #fff;
   width: 400px;
   min-width: 200px;
-  margin: 100px auto 40px;
   padding: 45px;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
   border-radius: 2rem;
-
 }
 
 .login-form .sb {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   outline: 0;
-  background: #EF4352;
+  background: #ef4352;
   width: 100%;
-  border: solid 1px #EF4352;
+  border: solid 1px #ef4352;
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
   color: #f2f2f2;
-  transition: background-color 0.5s ease;
+  transition: background-color .5s ease;
 }
 
 .login-form input {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -42,29 +42,26 @@
   box-sizing: border-box;
   font-size: 14px;
   border-radius: .2rem;
-
 }
 
-.login-form a{
+.login-form a {
   font-size: 1rem;
-
 }
 
 .login-form .sb:hover {
   background-color: white;
-  color: #EF4352;
-  border: solid 1px #EF4352;
+  color: #ef4352;
+  border: solid 1px #ef4352;
 }
 
-.admin-login{
+.admin-login {
   text-align: center;
   width: 200px;
   margin: 0 auto;
   border: 1px solid white;
-
 }
 
-.admin-login a{
+.admin-login a {
   text-decoration: none;
   color: white;
 }

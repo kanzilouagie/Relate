@@ -12,6 +12,11 @@
 <input type="text" name="fullname">
 <label for="name">email</label>
 <input type="email" name="email">
+<input type="radio" name="anonymous" value="0" checked>
+<label for="anonymous">ik wil dit publiceren onder mijn naam</label>
+<input type="radio" name="anonymous" value="1">
+<label for="anonymous">ik wil dit anoniem publiceren</label>
 <button type="submit" name="submit">Upload Audio</button>
 </form>
 </section>
+<?php include '__footer.php'?>

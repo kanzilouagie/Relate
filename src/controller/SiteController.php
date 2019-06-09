@@ -54,7 +54,10 @@ class SiteController extends Controller{
               'type' => "video",
               'story_name' => $_POST['char_name'],
               'story_content' => $fileName,
-              'published' => "false"
+              'published' => "false",
+              'anonymous' => $_POST['anonymous'],
+              'relates' => 0,
+              'text_pic' => "video"
             );
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");
@@ -99,7 +102,10 @@ class SiteController extends Controller{
               'type' => "audio",
               'story_name' => $_POST['char_name'],
               'story_content' => $fileName,
-              'published' => "false"
+              'published' => "false",
+              'anonymous' => $_POST['anonymous'],
+              'relates' => 0,
+              'text_pic' => "audio"
             );
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");
@@ -120,17 +126,46 @@ class SiteController extends Controller{
     $this->set('title','Upload text');
 
     if(isset($_POST['submit'])) {
+      $file = $_FILES['file'];
+      $fileName = $_FILES['file']['name'];
+      $fileTmpName = $_FILES['file']['tmp_name'];
+      $fileSize = $_FILES['file']['size'];
+      $fileError = $_FILES['file']['error'];
+      $fileType = $_FILES['file']['type'];
+
+      $fileExt = explode('.', $fileName);
+      $fileActualExt = strtolower(end($fileExt));
+
+      $allowed = array('jpg', 'jpeg', 'png');
+
+      if(in_array($fileActualExt, $allowed)) {
+        if($fileError === 0 ) {
+          if($fileSize < 200000000) {
+            $fileNameNew = uniqid('', true).".".$fileActualExt;
+            $fileDestination = "./assets/images/stories/".$fileName;
+            move_uploaded_file($fileTmpName, $fileDestination);
             $data = array(
               'name' => $_POST['fullname'],
               'email' => $_POST['email'],
               'type' => "text",
               'story_name' => $_POST['char_name'],
               'story_content' => $_POST['story'],
-              'published' => "false"
+              'published' => "false",
+              'anonymous' => $_POST['anonymous'],
+              'relates' => 0,
+              'text_pic' => $fileName
             );
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");
-
+          } else {
+            echo "file is too big";
+          }
+        } else {
+          echo "there was an error uploading your file";
+        }
+      } else {
+        echo "upload a jpg, jpeg or png file";
+      }
   }
   }
 

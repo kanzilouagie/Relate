@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/Controller.php';
 require_once __DIR__ . '/../dao/AdminDAO.php';
+require_once __DIR__ . '/../dao/VerhaalDAO.php';
 
 class AdminController extends Controller{
 
@@ -30,6 +31,59 @@ class AdminController extends Controller{
       header('Location: index.php?page=admin');
     }
     $this->set('title','admin');
+    if(isset($_GET['actie'])) {
+      session_destroy();
+      header('Location: index.php?page=admin');
+    }
+    $verhaalDAO = new VerhaalDAO();
+    $verhalen = $verhaalDAO->selectAll();
+    $this->set('verhalen', $verhalen);
+  }
+
+  public function edit(){
+    $this->set('title','edit story');
+    $verhaalDAO = new VerhaalDAO();
+    $id = $_GET['id'];
+    $verhaal = $verhaalDAO->selectById($id);
+    $this->set('verhaal', $verhaal);
+
+    if(isset($_POST['verwijder'])) {
+      $verhaalDAO->delete($id);
+      header("Location: index.php?page=logged_in");
+
+    }
+
+    if(isset($_POST['offline'])) {
+      $data = array(
+        'story_name' => $_POST['char_name'],
+        'story_content' => $_POST['story'],
+        'published' => "false",
+      );
+      $verhaalDAO->update($id, $data);
+      header("Location: index.php?page=logged_in");
+
+    }
+
+    if(isset($_POST['publiceer'])) {
+      $data = array(
+        'story_name' => $_POST['char_name'],
+        'story_content' => $_POST['story'],
+        'published' => 1
+      );
+      $verhaalDAO->update($id, $data);
+      header("Location: index.php?page=logged_in");
+
+    }
+
+
+
+  }
+
+  public function addadmin() {
+    if(!isset($_SESSION['logged_in']) || !($_SESSION['logged_in'])) {
+      header('Location: index.php?page=admin');
+    }
+    $this->set('title','Add Administrator');
     $adminDAO = new AdminDAO();
     if(isset($_POST['action'])) {
       if($_POST['action'] === 'register') {
@@ -47,8 +101,32 @@ class AdminController extends Controller{
     }
   }
 
-  public function twotales(){
-    $this->set('title','TwoTales');
+  public function alleinzendingen(){
+    if(!isset($_SESSION['logged_in']) || !($_SESSION['logged_in'])) {
+      header('Location: index.php?page=admin');
+    }
+    $this->set('title','Alle Inzendingen');
+    if(isset($_GET['actie'])) {
+      session_destroy();
+      header('Location: index.php?page=admin');
+    }
+    $verhaalDAO = new VerhaalDAO();
+    $verhalen = $verhaalDAO->selectAll();
+    $this->set('verhalen', $verhalen);
+  }
+
+  public function gepubliceerd(){
+    if(!isset($_SESSION['logged_in']) || !($_SESSION['logged_in'])) {
+      header('Location: index.php?page=admin');
+    }
+    $this->set('title','Gepubliceerde Inzendingen');
+    if(isset($_GET['actie'])) {
+      session_destroy();
+      header('Location: index.php?page=admin');
+    }
+    $verhaalDAO = new VerhaalDAO();
+    $verhalen = $verhaalDAO->selectAll();
+    $this->set('verhalen', $verhalen);
   }
 
 }
