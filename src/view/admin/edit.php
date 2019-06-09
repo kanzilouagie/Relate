@@ -10,7 +10,7 @@
 
     <?php if($verhaal['type'] == "text") { ?>
     <section>
-      <form method="POST" enctype="multipart/form-data">
+      <form class="dashboard_flex" method="POST" enctype="multipart/form-data">
         <div class="dashboard_item edit">
           <img
             src="./assets/images/<?php if($verhaal['text_pic'] == "video" || $verhaal['text_pic'] == "audio") {  echo "default.png"; } else { echo "stories/".$verhaal['text_pic']; }?>"
@@ -21,13 +21,10 @@
           <button class="dashboard_item__button offline" type="submit" name="offline">Laat nog offline</button>
           <button class="dashboard_item__button verwijder" type="submit" name="verwijder">Verwijder</button>
         </div>
-        <label for="name">character name</label>
-        <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">
-        <label for="omslagfoto"></label>
-        <img src="./assets/images/stories/<?php echo $verhaal['text_pic'] ?>" alt="<?php echo $verhaal['text_pic'] ?>"
-          width="200" height="200">
-        <label for="story">Story</label>
+        <div class="dashboard_item__main">
+        <p>Mijn naam is  <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">, en dit is mijn verhaal:</p>
         <textarea name="story" cols="30" rows="10"><?php echo $verhaal['story_content'] ?></textarea>
+        </div>
       </form>
     </section>
 
@@ -35,7 +32,7 @@
 
     <?php if($verhaal['type'] == "video") { ?>
       <section>
-      <form method="POST" enctype="multipart/form-data">
+      <form class="dashboard_flex" method="POST" enctype="multipart/form-data">
         <div class="dashboard_item edit">
           <img
             src="./assets/images/<?php if($verhaal['text_pic'] == "video" || $verhaal['text_pic'] == "audio") {  echo "default.png"; } else { echo "stories/".$verhaal['text_pic']; }?>"
@@ -46,15 +43,13 @@
           <button class="dashboard_item__button offline" type="submit" name="offline">Laat nog offline</button>
           <button class="dashboard_item__button verwijder" type="submit" name="verwijder">Verwijder</button>
         </div>
-        <label for="name">character name</label>
-        <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">
-        <input type="text" name="story" value="<?php echo $verhaal['story_content'] ?>">
-        <video width="320" height="240" controls>
+        <div class="dashboard_item__main">
+        <p>Mijn naam is  <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">, en dit is mijn verhaal:</p>
+        <input class="hidden" type="text" name="story" value="<?php echo $verhaal['story_content'] ?>">
+        <video controls>
           <source src="./assets/videos/stories/<?php echo $verhaal['story_content'] ?>" type="video/mp4">
         </video>
-        <button type="submit" name="verwijder">Verwijder</button>
-        <button type="submit" name="offline">Laat nog offline</button>
-        <button type="submit" name="publiceer">Publiceer</button>
+        </div>
       </form>
     </section>
 

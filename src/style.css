@@ -190,6 +190,10 @@ h1 {
   }
 }
 
+.admin_header {
+  position: fixed;
+}
+
 .admin_home {
   width: 100%;
   padding-top: 2rem;
@@ -228,12 +232,13 @@ main {
 
 .admin__top_header {
   background: white;
-  width: 100%;
+  width: calc(100% - 30rem);
   padding: 2rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .3);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 30rem;
 
   & a {
     text-decoration: none;
@@ -260,12 +265,13 @@ main {
 }
 
 .dashboard_main {
-  width: 100%;
-  height: calc(100vh - 7rem);
+  width: calc(100% - 30rem);
   padding: 3rem;
+  margin-left: 30rem;
 }
 
 .addadmin {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,6 +337,7 @@ main {
 }
 
 .storyitems {
+  height: 100vh;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -345,4 +352,59 @@ main {
 
 .admin_active {
   background: #fd294c !important;
+}
+
+.dashboard_flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.dashboard_item__main {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 3rem 2rem;
+  padding: 7rem;
+  min-width: 20rem;
+  width: 90rem;
+  min-height: 70rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .3);
+
+  & p {
+    outline: 0;
+    font-weight: bold;
+    margin-bottom:3rem;
+  }
+
+  & input {
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+
+  & input:focus {
+    outline: 0;
+  }
+
+  & textarea {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    padding: 1rem;
+    width: 100%;
+    height: 50rem;
+    border-radius: 1rem;
+    resize: none;
+  }
+
+  & video {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+  }
 }
