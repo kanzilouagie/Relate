@@ -32,7 +32,9 @@
   </div>
   <div class="stats_text">
     <p>3 Upload methodes</p>
+    <div class="vr">&nbsp;</div>
     <p>4 Two-tales</p>
+    <div class="vr">&nbsp;</div>
     <p><?php echo count($verhalen);?> Eigen Verhalen</p>
   </div>
 </section>

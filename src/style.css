@@ -155,6 +155,12 @@ scroll
   width: 100%;
 }
 
+.vr {
+  width: 1px;
+  background-color: #ef4352;
+  height: 10vh;
+}
+
 .header_home {
   background-color: #232222;
   display: flex;
