@@ -42,43 +42,26 @@
 <section class="twotale">
 <div class="block-50">
   <div class="gutter">
-      <div class="cover-img" style="background-image:url('./assets/images/twotales/twotales_01_left01.png')"></div>
+    <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
   <div class="gutter">
-      <div class="cover-img" style="background-image:url('./assets/images/twotales/twotales_01_left01.png')"></div>
+  <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
   <div class="gutter">
-      <div class="cover-img" style="background-image:url('./assets/images/twotales/twotales_01_left01.png')"></div>
-  </div>
-  <div class="gutter">
-      <div class="cover-img" style="background-image:url('./assets/images/twotales/twotales_01_left01.png')"></div>
-  </div>
-  <div class="gutter">
-      <div class="cover-img" style="background-image:url('./assets/images/twotales/twotales_01_left01.png')"></div>
+  <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
 </div>
 
 <div class="block-50">
   <div class="panelCon">
     <div class="gutter">
-        <div class="cover-img panel" style="background-image:url('./assets/images/twotales/twotales_01_right01.png')">
-        <p>test</p></div>
+        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
     </div>
     <div class="gutter">
-        <div class="cover-img panel" style="background-image:url('./assets/images/twotales/twotales_01_right01.png')">
-        <p>test</p></div>
+        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
     </div>
     <div class="gutter">
-        <div class="cover-img panel" style="background-image:url('./assets/images/twotales/twotales_01_right01.png')">
-        <p>test</p></div>
-    </div>
-    <div class="gutter">
-        <div class="cover-img panel" style="background-image:url('./assets/images/twotales/twotales_01_right01.png')">
-        <p>test</p></div>
-    </div>
-    <div class="gutter">
-        <div class="cover-img panel" style="background-image:url('./assets/images/twotales/twotales_01_right01.png')">
-        <p>test</p></div>
+        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
     </div>
   </div>
 </div>

@@ -28,3 +28,22 @@
 .panel {
   width: 100%;
 }
+
+.gutter {
+  height: 70vh;
+  width: 50vw;
+}
+
+.gutter img {
+  height: 70vh;
+  position: relative;
+  right: 0;
+  float: right;
+}
+
+.panelCon .gutter img {
+  height: 70vh;
+  position: relative;
+  left: 0;
+  float: left;
+}
