@@ -4,7 +4,6 @@ const $menuButton = document.querySelector('.toggle_menu');
 
 $menuButton.addEventListener('click', toggle);
 
-
 function toggle() {
   const $menu = document.querySelector('.admin_header');
   const $top = document.querySelector('.admin__top_header');

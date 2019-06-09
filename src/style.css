@@ -2,6 +2,7 @@
 @import './css/vars.css';
 @import './css/admin.css';
 @import './css/footer.css';
+@import './css/twotale.css';
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 html {
@@ -295,21 +296,8 @@ h1 {
   }
 }
 
-.toggle_menu {
-  display: none;
-
-  @media only screen and (max-width: 1030px) {
-    display: inline;
-  }
-}
-
 .admin_header {
   position: fixed;
-  z-index: 999;
-
-  @media only screen and (max-width: 1030px) {
-    display: none;
-  }
 }
 
 .admin_home {
@@ -380,22 +368,12 @@ main {
     width: 20px;
     height: 20px;
   }
-
-  @media only screen and (max-width: 1030px) {
-    margin-left: 0;
-    width: 100%;
-  }
 }
 
 .dashboard_main {
   width: calc(100% - 30rem);
   padding: 3rem;
   margin-left: 30rem;
-
-  @media only screen and (max-width: 1030px) {
-    margin-left: 0;
-    width: 100%;
-  }
 }
 
 .addadmin {
@@ -483,7 +461,6 @@ main {
 }
 
 .dashboard_flex {
-  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
