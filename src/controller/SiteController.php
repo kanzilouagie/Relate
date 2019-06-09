@@ -10,6 +10,9 @@ class SiteController extends Controller{
 
   public function index(){
     $this->set('title','Relate');
+    $verhaalDAO = new VerhaalDAO();
+    $verhalen = $verhaalDAO->selectAll();
+    $this->set('verhalen', $verhalen);
   }
 
   public function verhalen(){
