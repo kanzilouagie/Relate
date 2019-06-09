@@ -31,17 +31,6 @@ class AdminController extends Controller{
       header('Location: index.php?page=admin');
     }
     $this->set('title','admin');
-    $adminDAO = new AdminDAO();
-    if(isset($_POST['action'])) {
-      if($_POST['action'] === 'register') {
-        $data = array(
-          'username' => $_POST['username'],
-          'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
-        );
-        $adminDAO->insert($data);
-      }
-    }
-
     if(isset($_GET['actie'])) {
       session_destroy();
       header('Location: index.php?page=admin');
@@ -88,6 +77,56 @@ class AdminController extends Controller{
 
 
 
+  }
+
+  public function addadmin() {
+    if(!isset($_SESSION['logged_in']) || !($_SESSION['logged_in'])) {
+      header('Location: index.php?page=admin');
+    }
+    $this->set('title','Add Administrator');
+    $adminDAO = new AdminDAO();
+    if(isset($_POST['action'])) {
+      if($_POST['action'] === 'register') {
+        $data = array(
+          'username' => $_POST['username'],
+          'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
+        );
+        $adminDAO->insert($data);
+      }
+    }
+
+    if(isset($_GET['actie'])) {
+      session_destroy();
+      header('Location: index.php?page=admin');
+    }
+  }
+
+  public function alleinzendingen(){
+    if(!isset($_SESSION['logged_in']) || !($_SESSION['logged_in'])) {
+      header('Location: index.php?page=admin');
+    }
+    $this->set('title','Alle Inzendingen');
+    if(isset($_GET['actie'])) {
+      session_destroy();
+      header('Location: index.php?page=admin');
+    }
+    $verhaalDAO = new VerhaalDAO();
+    $verhalen = $verhaalDAO->selectAll();
+    $this->set('verhalen', $verhalen);
+  }
+
+  public function gepubliceerd(){
+    if(!isset($_SESSION['logged_in']) || !($_SESSION['logged_in'])) {
+      header('Location: index.php?page=admin');
+    }
+    $this->set('title','Gepubliceerde Inzendingen');
+    if(isset($_GET['actie'])) {
+      session_destroy();
+      header('Location: index.php?page=admin');
+    }
+    $verhaalDAO = new VerhaalDAO();
+    $verhalen = $verhaalDAO->selectAll();
+    $this->set('verhalen', $verhalen);
   }
 
 }

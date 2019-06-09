@@ -7,7 +7,7 @@
 
   <section class="dashboard_main storyitems">
     <?php foreach ($verhalen as $verhaal) {
-    if($verhaal['published'] == false) { ?>
+    if($verhaal['published'] == true) { ?>
       <div class="dashboard_item">
         <img src="./assets/images/<?php if($verhaal['text_pic'] == "video" || $verhaal['text_pic'] == "audio") {  echo "default.png"; } else { echo "stories/".$verhaal['text_pic']; }?>" width="100" alt="">
         <p class="dashboard_item__name"><?php echo $verhaal['name'] ?></p>

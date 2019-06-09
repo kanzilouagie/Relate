@@ -40,6 +40,18 @@
     'edit' => array(
       'controller' => 'Admin',
       'action' => 'edit'
+    ),
+    'addadmin' => array(
+      'controller' => 'Admin',
+      'action' => 'addadmin'
+    ),
+    'alleinzendingen' => array(
+      'controller' => 'Admin',
+      'action' => 'alleinzendingen'
+    ),
+    'gepubliceerd' => array(
+      'controller' => 'Admin',
+      'action' => 'gepubliceerd'
     )
 
     );
