@@ -28,12 +28,20 @@ body {
 
 .fold {
   display: flex;
+  color: white;
 }
 
 .fold_black {
   background-color: #232222;
   width: 70vw;
   height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fold_text {
+  margin-left: 4rem;
 }
 
 .fold_black_img {
@@ -54,6 +62,97 @@ body {
   background-color: #ef4352;
   width: 30vw;
   height: 70vh;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+scroll
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.scroll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.scroll-btn .mouse {
+  position: relative;
+  width: 35px;
+  height: 55px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid white;
+  border-radius: 23px;
+}
+
+.mouse-ball {
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: white;
+  border-radius: 50%;
+  animation: ani-mouse 2.5s linear infinite;
+}
+
+.scroll_text {
+  writing-mode: vertical-rl;
+}
+
+@keyframes ani-mouse {
+
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+.stats {
+  display: flex;
+  color: white;
+}
+
+.stats_image {
+  height: 20vh;
+  background-color: #ef4352;
+}
+
+.stats_image_red {
+  height: 20vh;
+}
+
+.stats_text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #232222;
+  height: 20vh;
+  width: 100%;
 }
 
 .header_home {
@@ -215,7 +314,8 @@ h1 {
   align-items: flex-start;
 }
 
-.admin_nav__inzendingen, .admin_nav__hulp {
+.admin_nav__inzendingen,
+.admin_nav__hulp {
   padding-top: 2rem;
   width: 100%;
   padding-left: 2rem;
@@ -236,7 +336,6 @@ h1 {
     text-decoration: none;
     color: white;
   }
-
 }
 
 main {
@@ -402,7 +501,7 @@ main {
   & p {
     outline: 0;
     font-weight: bold;
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
   }
 
   & input {
