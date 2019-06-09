@@ -489,6 +489,10 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+
+  @media only screen and (max-width: 1030px) {
+    justify-content: center;
+  }
 }
 
 .dashboard_item__main {
@@ -501,7 +505,6 @@ main {
   padding: 7rem;
   min-width: 20rem;
   width: 90rem;
-  min-height: 70rem;
   border-radius: 2rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .3);
 
@@ -534,8 +537,12 @@ main {
 
   & video {
     width: 100%;
-    height: 50rem;
-    object-fit: cover;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 1030px) {
+    padding: 2rem;
+    line-height: 3rem;
   }
 }
 

@@ -3,7 +3,7 @@
   <section class="admin__top_header">
   <button class="toggle_menu"><img src="./assets/images/menu_button.png" alt="menu button"></button>
     <a href="#">Nieuwe inzendingen</a>
-    <a class="submitform" href="index.php?page=logged_in&actie=loguit">Uitloggen</a>
+    <a class="submitform" href="index.php?page=logged_in&actie=loguit"><span class="logout_text">Uitloggen</span></a>
   </section>
 
   <section class="dashboard_main storyitems">

@@ -49,11 +49,29 @@ class AdminController extends Controller{
     $verhaal = $verhaalDAO->selectById($id);
     $this->set('verhaal', $verhaal);
     $this->set('backgroundcolor', 'class="adminbg"');
+
     if(isset($_POST['verwijder'])) {
+      $id = $_GET['id'];
+      if($verhaal['type'] == "text") {
+        $dir2 = $verhaal['text_pic'];
+        $dir = "./assets/images/stories/";
+      } else if($verhaal['type'] == "video") {
+        $dir2 = $verhaal['story_content'];
+        $dir = "./assets/videos/stories/";
+      } else if($verhaal['type'] == "audio") {
+        $dir2 = $verhaal['story_content'];
+        $dir = "./assets/audio/stories/";
+      }
+        $result = $dir . $dir2;
+        unlink($result);
       $verhaalDAO->delete($id);
       header("Location: index.php?page=logged_in");
-
     }
+
+
+
+
+
 
     if(isset($_POST['offline'])) {
       $data = array(
