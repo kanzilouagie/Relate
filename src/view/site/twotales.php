@@ -25,7 +25,7 @@ $('#list1').scroll( function() {
 });</script>
 
 <section class="twotale_flex">
-<div id="list1">
+<div id="list1" class="disable-scrollbars">
   <div class="gutter">
     <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
@@ -37,7 +37,7 @@ $('#list1').scroll( function() {
   </div>
 </div>
 
-<div id="list2">
+<div id="list2" class="disable-scrollbars">
       <div class="gutter">
           <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
       </div>
@@ -49,8 +49,4 @@ $('#list1').scroll( function() {
       </div>
 </div>
 </section>
-
-
-
-<p>twotales</p>
 <?php include '__footer.php'?>
