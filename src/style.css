@@ -207,17 +207,17 @@ scroll
   margin-bottom: 2rem;
 }
 
-/* .header_home {
+.header_home {
   background-color: #232222;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-} */
+}
 
 .navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .navigation_logo {
@@ -740,7 +740,7 @@ main {
   background-size: contain;
   background-position: right;
 } */
-
+/*
 nav {
   height: 100px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, .5);
@@ -842,4 +842,4 @@ nav .nav-toggle {
 .container p {
   line-height: 1.5;
   font-weight: 100;
-}
+} */

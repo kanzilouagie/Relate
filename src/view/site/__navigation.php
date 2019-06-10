@@ -1,6 +1,6 @@
 
 <header class="header_home">
-<script>
+<!-- <script>
 function nav() {
 
   var toggle = $('.nav-toggle'),
@@ -18,15 +18,15 @@ function nav() {
 };
 
 nav();
-</script>
-  <!-- <a href="index.php?page=home"><img  src="./assets/images/logo.png" alt="" height="50px" ></a>
+</script> -->
+  <a href="index.php?page=home"><img  src="./assets/images/logo.png" alt="" height="50px" ></a>
   <nav class="navigation">
     <a href="index.php?page=home">home</a>
     <a href="index.php?page=verhalen">verhalen</a>
     <a href="index.php?page=twotales">TwoTales</a>
     <a href="index.php?page=admin">admin</a>
-  </nav> -->
-  <nav>
+  </nav>
+  <!-- <nav>
   <div class="nav-logo"><a class="nav-logo" href="index.php?page=home"><img  src="./assets/images/logo.png" alt="" height="50px" ></a></div>
   <div class="nav-container">
   <a href="index.php?page=home">home</a>
@@ -35,5 +35,5 @@ nav();
     <a href="index.php?page=admin">admin</a>
   </div>
   <div class="nav-toggle">Menu</div>
-</nav>
+</nav> -->
 </header>
