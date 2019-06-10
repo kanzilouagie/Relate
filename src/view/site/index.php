@@ -42,31 +42,52 @@
   </div>
 </section>
 
-<section class="twotale">
-<div class="block-50">
-  <div class="gutter">
-    <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
-  </div>
-  <div class="gutter">
-  <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
-  </div>
-  <div class="gutter">
-  <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
-  </div>
-</div>
+<section class="twotales_link">
+  <div class="twotales_link_text">
 
-<div class="block-50">
-  <div class="panelCon">
+  </div>
+  <div class="twotales_link_button">
+    <button> let's go!</button>
+  </div>
+</section>
+
+<section class="upload_manieren">
+  <div class="upload_manieren_flex">
+  <h1>EN NU... Is HET AAN JOU.</h1>
+  <p class="subtext">Nu is het tijd om ons jouw verhaal te vertellen.</p>
+  <div class="upload_manieren_container">
+    <img  src="./assets/images/upload_manieren_write.png" alt="" height="150px"  >
+    <img  src="./assets/images/upload_manieren_video.png" alt="" height="150px" >
+    <img  src="./assets/images/upload_manieren_spraak.png" alt="" height="150px">
+  </div>
+  </div>
+</section>
+
+<!-- <section class="twotale">
+  <div class="block-50">
     <div class="gutter">
-        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+      <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
     </div>
     <div class="gutter">
-        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+    <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
     </div>
     <div class="gutter">
-        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+    <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
     </div>
   </div>
-</div>
-</section>
+
+  <div class="block-50">
+    <div class="panelCon">
+      <div class="gutter">
+          <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+      </div>
+      <div class="gutter">
+          <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+      </div>
+      <div class="gutter">
+          <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+      </div>
+    </div>
+  </div>
+</section> -->
 <?php include '__footer.php'?>

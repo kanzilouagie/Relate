@@ -24,6 +24,7 @@
 .subtext {
   font-family: 'gotham_medium';
   font-size: 2rem;
+  color: white;
 }
 
 .copytext {
@@ -231,7 +232,7 @@ scroll
 h1 {
   font-family: 'gotham_bold';
   font-weight: bold;
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 2rem 0;
   color: white;
   text-transform: uppercase;
@@ -595,4 +596,67 @@ main {
 
 .adminbg {
   background: #f7f7f7;
+}
+
+.upload_manieren {
+  display: flex;
+  height: 60vh;
+  width: 100vw;
+  background-color: #232222;
+  background-image: url('assets/images/upload_manieren.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.upload_manieren_flex {
+  margin: 4rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload_manieren_container {
+  background-color: #ef4352;
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.twotales_link {
+  display: flex;
+  color: white;
+}
+
+.twotales_link_button {
+  height: 20vh;
+  width: 20vw;
+  background-color: #232222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twotales_link_button button {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 20px;
+  background-color: #ef4352;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  font-family: 'gotham_bold';
+  line-height: 16rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.twotales_link_text {
+  background-color: #ef4352;
+  height: 20vh;
+  width: 100%;
 }
