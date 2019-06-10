@@ -42,7 +42,7 @@
   </div>
 </section>
 
-<section class="twotale">
+<!-- <section class="twotale">
   <div class="block-50">
     <div class="gutter">
       <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
@@ -68,7 +68,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="twotales_link">
   <div class="twotales_link_text">

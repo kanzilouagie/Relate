@@ -676,3 +676,33 @@ main {
   height: 20vh;
   width: 100%;
 }
+
+.twotale_flex {
+  display: flex;
+  margin-bottom: -2rem;
+}
+
+#list1,
+#list2 {
+  height: 70vh;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  background: white;
+  overflow-y: scroll;
+}
+
+#list1 {
+  background-color: #ef4352;
+}
+
+#list2 {
+  background-color: #232222;
+}
+
+#list2 .gutter img {
+  height: 70vh;
+  position: relative;
+  left: 0;
+  float: left;
+}

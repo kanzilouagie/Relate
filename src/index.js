@@ -24,7 +24,9 @@ function toggle() {
   }
 }
 
-document.getElementsByTagName('body')[0].onresize = function() { myFunction(); };
+document.getElementsByTagName('body')[0].onresize = function() {
+  myFunction();
+};
 function myFunction() {
   const $menu = document.querySelector('.admin_header');
   const w = window.innerWidth;
