@@ -1,6 +1,6 @@
 <footer>
   <div class="footer_logo">
-    <p>logo</p>
+  <img  src="./assets/images/logo.png" alt="" >
   </div>
 
   <div class="footer_flex">
@@ -19,10 +19,9 @@
     </section>
     <section class="footer_navigatie">
     <h3 class="footer_title">navigatie:</h3>
-      <a href=""><p>www.operaballet.be</p></a>
-      <a href=""><p>www.vlaanderen.be</p></a>
-      <a href=""><p>www.antwerpen.be</p></a>
-      <a href=""><p>www.gent.be</p></a>
+      <a href=""><p>home</p></a>
+      <a href=""><p>verhalen</p></a>
+      <a href=""><p>two-tales</p></a>
     </section>
   </div>
 
