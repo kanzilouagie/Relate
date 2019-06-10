@@ -2,10 +2,13 @@
 
 <section class="fold">
   <div class="fold_black">
-    <div class="fold_text">
+  <div class="fold_text">
       <h1>Opera & Ballet Saai?</h1>
-      <p>Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden </p>
-      <p>Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, ons niet verbinden </p>
+      <div class="vr_text">
+        <div class="vr_responsive">&nbsp;</div>
+        <p class="subtext">Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden </p>
+      </div>
+      <p class="copytext">Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, ons niet verbinden </p>
       <p>Kan je niet wachten? </p>
       <button></button>
     </div>
@@ -40,30 +43,74 @@
 </section>
 
 <section class="twotale">
-<div class="block-50">
-  <div class="gutter">
+  <div class="block-50">
+    <div class="gutter">
+      <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
+    </div>
+    <div class="gutter">
     <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
+    </div>
+    <div class="gutter">
+    <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
+    </div>
   </div>
-  <div class="gutter">
-  <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
-  </div>
-  <div class="gutter">
-  <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
-  </div>
-</div>
 
-<div class="block-50">
-  <div class="panelCon">
-    <div class="gutter">
-        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
-    </div>
-    <div class="gutter">
-        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
-    </div>
-    <div class="gutter">
-        <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+  <div class="block-50">
+    <div class="panelCon">
+      <div class="gutter">
+          <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+      </div>
+      <div class="gutter">
+          <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+      </div>
+      <div class="gutter">
+          <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+      </div>
     </div>
   </div>
-</div>
 </section>
+
+<section class="twotales_link">
+  <div class="twotales_link_text">
+
+  </div>
+  <div class="twotales_link_button">
+    <button> let's go!</button>
+  </div>
+</section>
+
+<section class="upload_manieren">
+  <div class="upload_manieren_flex">
+  <h1>EN NU... Is HET AAN JOU.</h1>
+  <p class="subtext">Nu is het tijd om ons jouw verhaal te vertellen.</p>
+  <div class="upload_manieren_container">
+    <div class="upload_manier">
+      <img  src="./assets/images/upload_manieren_write.png" alt="" height="150px">
+      <div class="vr_responsive">&nbsp;</div>
+      <div>
+        <h2>Schrijf jou verhaal</h2>
+        <p>Schrijf op je eigen manier jou verhaal. Vertel ons op een verhalende wijze een gebeurtenis uit jou leven.</p>
+      </div>
+    </div>
+    <div class="upload_manier">
+    <img  src="./assets/images/upload_manieren_video.png" alt="" height="150px" >
+    <div class="vr_responsive">&nbsp;</div>
+      <div>
+        <h2>Schrijf jou verhaal</h2>
+        <p>Schrijf op je eigen manier jou verhaal. Vertel ons op een verhalende wijze een gebeurtenis uit jou leven.</p>
+      </div>
+    </div>
+    <div class="upload_manier">
+    <img  src="./assets/images/upload_manieren_spraak.png" alt="" height="150px">
+    <div class="vr_responsive">&nbsp;</div>
+      <div>
+        <h2>Schrijf jou verhaal</h2>
+        <p>Schrijf op je eigen manier jou verhaal. Vertel ons op een verhalende wijze een gebeurtenis uit jou leven.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
 <?php include '__footer.php'?>

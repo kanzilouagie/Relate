@@ -1,43 +1,45 @@
-footer{
+footer {
   background-color: #232222;
   color: white;
   padding: 5rem;
 }
 
-.footer_logo{
+.footer_logo {
   width: 10rem;
   margin: 0 auto;
-  padding: 0 4rem 4rem 4rem;
+  padding-bottom: 4rem;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
-.footer_flex{
+.footer_flex {
   display: flex;
   justify-content: space-around;
 }
 
-.footer_links, .footer_navigatie{
+.footer_links,
+.footer_navigatie {
   width: 30rem;
 }
 
-.footer_navigatie{
+.footer_navigatie {
   text-align: right;
 }
 
-.footer_copyright{
+.footer_copyright {
   text-align: center;
   margin: 4rem;
 }
 
-.footer_title{
+.footer_title {
   font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .footer_links a,
-.footer_navigatie a{
-  color: #EF4352;
+.footer_navigatie a {
+  font-family: 'gotham_medium';
+  color: #ef4352;
   text-decoration: none;
 }
