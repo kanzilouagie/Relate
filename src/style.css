@@ -5,6 +5,30 @@
 @import './css/twotale.css';
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+@font-face {
+  font-family: 'gotham_light';
+  src: url(assets/fonts/GothamLight.woff);
+}
+
+@font-face {
+  font-family: 'gotham_medium';
+  src: url(assets/fonts/GothamMedium.woff);
+}
+
+@font-face {
+  font-family: 'gotham_bold';
+  src: url(assets/fonts/GothamBold.woff);
+}
+
+.subtext {
+  font-family: 'gotham_medium';
+  font-size: 2rem;
+}
+
+.copytext {
+  font-family: 'gotham_light';
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -162,6 +186,13 @@ scroll
   height: 10vh;
 }
 
+.vr_responsive {
+  width: 1px;
+  background-color: #ef4352;
+  height: 100%;
+  margin-right: 1rem;
+}
+
 .header_home {
   background-color: #232222;
   display: flex;
@@ -197,8 +228,9 @@ scroll
 }
 
 h1 {
+  font-family: 'gotham_bold';
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 6rem;
   margin: 2rem 0;
   color: white;
   text-transform: uppercase;

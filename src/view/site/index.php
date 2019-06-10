@@ -2,10 +2,13 @@
 
 <section class="fold">
   <div class="fold_black">
-    <div class="fold_text">
+  <div class="fold_text">
       <h1>Opera & Ballet Saai?</h1>
-      <p>Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden </p>
-      <p>Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, ons niet verbinden </p>
+      <div class="vr_text">
+        <div class="vr_responsive">&nbsp;</div>
+        <p class="subtext">Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden </p>
+      </div>
+      <p class="copytext">Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, zijn saai of vertellen ons verhalen waarmee we ons niet verbinden Opera stukken duren te lang, ons niet verbinden </p>
       <p>Kan je niet wachten? </p>
       <button></button>
     </div>
