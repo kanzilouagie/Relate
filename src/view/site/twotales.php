@@ -25,14 +25,34 @@ $('#list1').scroll( function() {
 });</script>
 
 <section class="twotale_flex">
+
+<div class="twotale_title">
+  <h1>Twee verhalen</h1>
+  <div class="vr_text">
+        <div class="vr_responsive">&nbsp;</div>
+        <p class="subtext">Eenzelfde kern.</p>
+      </div>
+</div>
 <div id="list1" class="disable-scrollbars">
   <div class="gutter">
+    <div class="twotale_text">
+      <h2>MADAM BUTTERFLY</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et eveniet in hic ipsum corporis dolores quis iste omnis enim id dolorum, excepturi culpa adipisci soluta sunt itaque quia a.</p>
+    </div>
     <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
   <div class="gutter">
+  <div class="twotale_text">
+      <h2>MADAM BUTTERFLY</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et eveniet in hic ipsum corporis dolores quis iste omnis enim id dolorum, excepturi culpa adipisci soluta sunt itaque quia a.</p>
+    </div>
   <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
   <div class="gutter">
+  <div class="twotale_text">
+      <h2>MADAM BUTTERFLY</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et eveniet in hic ipsum corporis dolores quis iste omnis enim id dolorum, excepturi culpa adipisci soluta sunt itaque quia a.</p>
+    </div>
   <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
 </div>

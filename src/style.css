@@ -25,6 +25,7 @@
   font-family: 'gotham_medium';
   font-size: 2rem;
   color: white;
+  padding-top: 1rem;
 }
 
 .copytext {
@@ -195,6 +196,12 @@ scroll
   margin-right: 1rem;
 }
 
+.vr_text {
+  display: flex;
+
+  margin-bottom: 2rem;
+}
+
 .header_home {
   background-color: #232222;
   display: flex;
@@ -233,7 +240,7 @@ h1 {
   font-family: 'gotham_bold';
   font-weight: bold;
   font-size: 5rem;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   color: white;
   text-transform: uppercase;
 }
@@ -709,4 +716,22 @@ main {
 .disable-scrollbars {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
+}
+
+.twotale_title {
+  position: absolute;
+  top: 18%;
+  left: 4%;
+  z-index: 9999;
+}
+
+.twotale_title .vr_text .vr_responsive {
+  background-color: white;
+}
+
+.gutter_image_01 {
+  background-image: url('./assets/images/twotales/twotales_01_left01.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
