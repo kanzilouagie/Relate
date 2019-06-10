@@ -7,7 +7,7 @@
 
 
 <div class="story_box">
-      <a class="story_box__link"href="#">
+      <a class="story_box__link" href="index.php?page=detail&id=<?php echo $verhaal['id']?>">
         <?php if($verhaal['type'] == "video") { ?>
           <img width="200" src="./assets/videos/stories/<?php echo $verhaal['text_pic']?>" alt="<?php echo $verhaal['text_pic']?>">
         <?php } ?>

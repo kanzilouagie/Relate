@@ -1,34 +1,50 @@
 <?php include '__navigation.php'?>
 
-<section class="video_upload">
-<div class= "login_wrapper">
-    <h1>Upload video</h1>
-<div class= "login-form">
-<form method="POST" enctype="multipart/form-data">
-<label for="name">character name</label>
-<input placeholder='Karakter naam' type="text" name="char_name">
+<section class="black-bg">
+<div class="backrgound_tabbar">
+  <div class="tabbar">
+    <a class="tabbartitle" href="index.php?page=text_upload">write it</a>
+    <a class="tabbartitle" href="index.php?page=audio_upload">record it</a>
+    <a class="tabbartitle activebro" href="index.php?page=video_upload">film it</a>
+  </div>
+</div>
+<form autocomplete="off" class="form-flex" method="POST" enctype="multipart/form-data">
+<input class="hidden">
+  <div>
+    <label class="titlelabel" for="char_name"><span class="outline">Hi,</span> mijn verhaal heet</label>
+    <input class="inputtitle" type="text" name="char_name">
+  </div>
 
-<div class="box">
-	<input type="file" name="file" id="file" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
-	<label for="file"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Upload a video&hellip;</span></label>
-</div>
-<label for="file">omslagfoto</label>
-<input type="file" name="file_image">
-<label for="name">full name</label>
-<input type="text" name="fullname">
-<label for="name">email</label>
-<input placeholder='E-mail' type="email" name="email">
-<div class= "login_radio">
-  <input type="radio" name="anonymous" value="0" checked>
-  <label for="anonymous">ik wil dit publiceren onder mijn naam</label>
-</div>
-<div class= "login_radio">
-  <input type="radio" name="anonymous" value="1">
-  <label for="anonymous">ik wil dit anoniem publiceren</label>
-</div>
-<button class='sb' type="submit" name="submit">Upload Video</button>
+  <div>
+    <label class="namelabel" for="name">Door</label>
+    <input class="inputname" type="text" name="fullname">
+  </div>
+
+  <p class="textforadd">Begin met je verhaal door even de personages aan te kaarten en jouw eigen verhaal te situeren.</p>
+
+  <div class="upload-btn-wrapper">
+      <input class="addfilebtn" type="file" name="file">
+      <button class="filebtnreplace inverse">Kies een Video</button>
+  </div>
+
+  <div class="mailanonym">
+  <div>
+    <div>
+      <label class="maillabel" for="email">email</label>
+      <input class="inputname inputmail" type="email" name="email">
+    </div>
+    <div class="upload-btn-wrapper">
+      <input class="addfilebtn" type="file" name="file_image">
+      <button class="filebtnreplace">Kies een foto</button>
+    </div>
+  </div>
+  <div class="checkandsub">
+    <div>
+      <input type="checkbox" name="anonymous" value="1">
+      <label class="textforadd" for="anonymous">Ik wil dit anoniem publiceren</label>
+    </div>
+    <button class="addtextbtn" type="submit" name="submit">TELL YOUR STORY</button>
+  </div>
 </form>
-</div>
-</div>
 </section>
 <?php include '__footer.php'?>

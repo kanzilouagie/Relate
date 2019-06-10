@@ -1,24 +1,49 @@
 <?php include '__navigation.php'?>
 
-<p>text</p>
+<section class="black-bg">
+<div class="backrgound_tabbar">
+  <div class="tabbar">
+    <a class="tabbartitle activebro" href="index.php?page=text_upload">write it</a>
+    <a class="tabbartitle" href="index.php?page=audio_upload">record it</a>
+    <a class="tabbartitle" href="index.php?page=video_upload">film it</a>
+  </div>
+</div>
+<form autocomplete="off" class="form-flex" method="POST" enctype="multipart/form-data">
+<input class="hidden">
+  <div>
+    <label class="titlelabel" for="char_name"><span class="outline">Hi,</span> mijn verhaal heet</label>
+    <input class="inputtitle" type="text" name="char_name">
+  </div>
 
-<section>
-<form method="POST" enctype="multipart/form-data">
-<label for="name">character name</label>
-<input type="text" name="char_name">
-<label for="file">omslagfoto</label>
-<input type="file" name="file">
-<label for="story">Story</label>
-<textarea name="story" cols="30" rows="10"></textarea>
-<label for="name">full name</label>
-<input type="text" name="fullname">
-<label for="name">email</label>
-<input type="email" name="email">
-<input type="radio" name="anonymous" value="0" checked>
-<label for="anonymous">ik wil dit publiceren onder mijn naam</label>
-<input type="radio" name="anonymous" value="1">
-<label for="anonymous">ik wil dit anoniem publiceren</label>
-<button type="submit" name="submit">Upload Text</button>
+  <div>
+    <label class="namelabel" for="name">Door</label>
+    <input class="inputname" type="text" name="fullname">
+  </div>
+
+  <p class="textforadd">Begin met je verhaal door even de personages aan te kaarten en jouw eigen verhaal te situeren.</p>
+
+  <label class="maillabel" for="story">Jouw Verhaal</label>
+  <textarea class="textareainput" placeholder="Er was eens..." name="story" cols="30" rows="10"></textarea>
+
+  <div class="mailanonym">
+  <div>
+    <div>
+      <label class="maillabel" for="email">email</label>
+      <input class="inputname inputmail" type="email" name="email">
+    </div>
+    <div class="upload-btn-wrapper">
+      <input class="addfilebtn" type="file" name="file">
+      <button class="filebtnreplace">Kies een foto</button>
+    </div>
+  </div>
+  <div class="checkandsub">
+    <div>
+      <input type="checkbox" name="anonymous" value="1">
+      <label class="textforadd" for="anonymous">Ik wil dit anoniem publiceren</label>
+    </div>
+    <button class="addtextbtn" type="submit" name="submit">TELL YOUR STORY</button>
+  </div>
 </form>
 </section>
 <?php include '__footer.php'?>
+

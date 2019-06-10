@@ -52,6 +52,10 @@
     'gepubliceerd' => array(
       'controller' => 'Admin',
       'action' => 'gepubliceerd'
+    ),
+    'detail' => array(
+      'controller' => 'Site',
+      'action' => 'detail'
     )
 
     );

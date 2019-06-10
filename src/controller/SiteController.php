@@ -234,6 +234,15 @@ class SiteController extends Controller{
   }
   }
 
+  public function detail(){
+    $this->set('backgroundcolor', '');
+    $this->set('title','detail');
+    $verhaalDAO = new VerhaalDAO();
+    $id = $_GET['id'];
+    $verhaal = $verhaalDAO->selectById($id);
+    $this->set('verhaal', $verhaal);
+  }
+
 
 
 }
