@@ -1,5 +1,5 @@
 <header class="header_home">
-  <div class="navigation_logo">test</div>
+<img  src="./assets/images/logo.png" alt="" height="50px" >
   <nav class="navigation">
     <a href="index.php?page=home">home</a>
     <a href="index.php?page=verhalen">verhalen</a>
