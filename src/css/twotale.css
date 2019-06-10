@@ -1,5 +1,8 @@
 .twotale {
   z-index: -9999;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-bottom: -2rem;
 }
 
 .cover-img {
