@@ -42,28 +42,7 @@
   </div>
 </section>
 
-<section class="twotales_link">
-  <div class="twotales_link_text">
-
-  </div>
-  <div class="twotales_link_button">
-    <button> let's go!</button>
-  </div>
-</section>
-
-<section class="upload_manieren">
-  <div class="upload_manieren_flex">
-  <h1>EN NU... Is HET AAN JOU.</h1>
-  <p class="subtext">Nu is het tijd om ons jouw verhaal te vertellen.</p>
-  <div class="upload_manieren_container">
-    <img  src="./assets/images/upload_manieren_write.png" alt="" height="150px"  >
-    <img  src="./assets/images/upload_manieren_video.png" alt="" height="150px" >
-    <img  src="./assets/images/upload_manieren_spraak.png" alt="" height="150px">
-  </div>
-  </div>
-</section>
-
-<!-- <section class="twotale">
+<section class="twotale">
   <div class="block-50">
     <div class="gutter">
       <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
@@ -89,5 +68,49 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
+
+<section class="twotales_link">
+  <div class="twotales_link_text">
+
+  </div>
+  <div class="twotales_link_button">
+    <button> let's go!</button>
+  </div>
+</section>
+
+<section class="upload_manieren">
+  <div class="upload_manieren_flex">
+  <h1>EN NU... Is HET AAN JOU.</h1>
+  <p class="subtext">Nu is het tijd om ons jouw verhaal te vertellen.</p>
+  <div class="upload_manieren_container">
+    <div class="upload_manier">
+      <img  src="./assets/images/upload_manieren_write.png" alt="" height="150px">
+      <div class="vr_responsive">&nbsp;</div>
+      <div>
+        <h2>Schrijf jou verhaal</h2>
+        <p>Schrijf op je eigen manier jou verhaal. Vertel ons op een verhalende wijze een gebeurtenis uit jou leven.</p>
+      </div>
+    </div>
+    <div class="upload_manier">
+    <img  src="./assets/images/upload_manieren_video.png" alt="" height="150px" >
+    <div class="vr_responsive">&nbsp;</div>
+      <div>
+        <h2>Schrijf jou verhaal</h2>
+        <p>Schrijf op je eigen manier jou verhaal. Vertel ons op een verhalende wijze een gebeurtenis uit jou leven.</p>
+      </div>
+    </div>
+    <div class="upload_manier">
+    <img  src="./assets/images/upload_manieren_spraak.png" alt="" height="150px">
+    <div class="vr_responsive">&nbsp;</div>
+      <div>
+        <h2>Schrijf jou verhaal</h2>
+        <p>Schrijf op je eigen manier jou verhaal. Vertel ons op een verhalende wijze een gebeurtenis uit jou leven.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
 <?php include '__footer.php'?>

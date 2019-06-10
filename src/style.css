@@ -191,7 +191,7 @@ scroll
 .vr_responsive {
   width: 1px;
   background-color: #ef4352;
-  height: 100%;
+  height: inherit;
   margin-right: 1rem;
 }
 
@@ -607,6 +607,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  color: white;
 }
 
 .upload_manieren_flex {
@@ -622,9 +623,24 @@ main {
   height: 70%;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 4rem;
+}
+
+.upload_manier {
+  display: flex;
+  width: 40rem;
+}
+
+.upload_manier .vr_responsive {
+  background-color: white;
+}
+
+.upload_manier h2 {
+  font-size: 2rem;
+  font-family: 'gotham_bold';
+  margin-bottom: 1.5rem;
 }
 
 .twotales_link {
