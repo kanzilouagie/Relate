@@ -35,6 +35,8 @@
 .gutter {
   height: 70vh;
   width: 50vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 .gutter img {
@@ -49,4 +51,12 @@
   position: relative;
   left: 0;
   float: left;
+}
+
+.twotale_text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
