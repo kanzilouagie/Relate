@@ -238,12 +238,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.verhalen_grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  margin: 2rem;
-}
-
 .inputfile {
   width: .1px;
   height: .1px;

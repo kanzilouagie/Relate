@@ -8,6 +8,8 @@
 <input type="text" name="char_name">
 <label for="file">file</label>
 <input type="file" name="file">
+<label for="file">omslagfoto</label>
+<input type="file" name="file_image">
 <label for="name">full name</label>
 <input type="text" name="fullname">
 <label for="name">email</label>

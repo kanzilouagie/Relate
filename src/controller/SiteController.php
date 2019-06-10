@@ -66,8 +66,36 @@ class SiteController extends Controller{
               'relates' => 0,
               'text_pic' => "video"
             );
+            $fileImg = $_FILES['file_image'];
+      $fileNameImg = $_FILES['file_image']['name'];
+      $fileTmpNameImg = $_FILES['file_image']['tmp_name'];
+      $fileSizeImg = $_FILES['file_image']['size'];
+      $fileErrorImg = $_FILES['file_image']['error'];
+      $fileTypeImg = $_FILES['file_image']['type'];
+
+      $fileExtImg = explode('.', $fileNameImg);
+      $fileActualExtImg = strtolower(end($fileExtImg));
+
+      $allowedImg = array('jpg', 'jpeg', 'png');
+
+      if(in_array($fileActualExtImg, $allowedImg)) {
+        if($fileErrorImg === 0 ) {
+          if($fileSizeImg < 200000000) {
+            $fileNameNewImg = uniqid('', true).".".$fileActualExtImg;
+            $fileDestinationImg = "./assets/videos/stories/".$fileNameImg;
+            move_uploaded_file($fileTmpNameImg, $fileDestinationImg);
+            $data['text_pic'] = $fileNameImg;
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");
+          } else {
+            echo "file is too big";
+          }
+        } else {
+          echo "there was an error uploading your file";
+        }
+      } else {
+        echo "upload a mp4 file";
+      }
           } else {
             echo "file is too big";
           }
@@ -115,8 +143,36 @@ class SiteController extends Controller{
               'relates' => 0,
               'text_pic' => "audio"
             );
+      $fileImg = $_FILES['file_image'];
+      $fileNameImg = $_FILES['file_image']['name'];
+      $fileTmpNameImg = $_FILES['file_image']['tmp_name'];
+      $fileSizeImg = $_FILES['file_image']['size'];
+      $fileErrorImg = $_FILES['file_image']['error'];
+      $fileTypeImg = $_FILES['file_image']['type'];
+
+      $fileExtImg = explode('.', $fileNameImg);
+      $fileActualExtImg = strtolower(end($fileExtImg));
+
+      $allowedImg = array('jpg', 'jpeg', 'png');
+
+      if(in_array($fileActualExtImg, $allowedImg)) {
+        if($fileErrorImg === 0 ) {
+          if($fileSizeImg < 200000000) {
+            $fileNameNewImg = uniqid('', true).".".$fileActualExtImg;
+            $fileDestinationImg = "./assets/audio/stories/".$fileNameImg;
+            move_uploaded_file($fileTmpNameImg, $fileDestinationImg);
+            $data['text_pic'] = $fileNameImg;
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");
+          } else {
+            echo "file is too big";
+          }
+        } else {
+          echo "there was an error uploading your file";
+        }
+      } else {
+        echo "upload a mp4 file";
+      }
           } else {
             echo "file is too big";
           }

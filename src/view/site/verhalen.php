@@ -9,9 +9,7 @@
       <div class="box_content">
 
       <?php if($verhaal['type'] == "video") { ?>
-        <video controls width="200">
-          <source src="./assets/videos/stories/<?php echo $verhaal['story_content'] ?>" type="video/mp4">
-        </video>
+        <img width="200" src="./assets/videos/stories/<?php echo $verhaal['text_pic']?>" alt="<?php echo $verhaal['text_pic']?>">
       <?php } ?>
 
       <?php if($verhaal['type'] == "text") { ?>
@@ -19,17 +17,18 @@
       <?php } ?>
 
       <?php if($verhaal['type'] == "audio") { ?>
-        <audio controls>
-          <source src="./assets/audio/stories/<?php echo $verhaal['story_content'] ?>" type="audio/mpeg">
-        </audio>
+        <img width="200" src="./assets/audio/stories/<?php echo $verhaal['text_pic']?>" alt="<?php echo $verhaal['text_pic']?>">
       <?php } ?>
-
       </div>
       <div class="box_info">
+      <div class="box_info__left">
       <p class="box_info__title"><?php echo $verhaal['story_name'] ?></p>
-      <p class="box_info__user"><?php if($verhaal['anonymous'] == 1) { echo "anonymous";} else { echo $verhaal['name'];}?></p>
       <p class="box_info__relates"><?php echo $verhaal['relates'] ?></p>
+      </div>
+      <div class="box_info__right">
+      <p class="box_info__user"><?php if($verhaal['anonymous'] == 1) { echo "anonymous";} else { echo $verhaal['name'];}?></p>
       <button>Relate</button>
+      </div>
       </div>
   </div>
     <?php }}  ?>
