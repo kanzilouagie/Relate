@@ -13,9 +13,7 @@
     <section>
       <form class="dashboard_flex" method="POST" enctype="multipart/form-data">
         <div class="dashboard_item edit">
-          <img
-            src="./assets/images/<?php if($verhaal['text_pic'] == "video" || $verhaal['text_pic'] == "audio") {  echo "default.png"; } else { echo "stories/".$verhaal['text_pic']; }?>"
-            width="100" alt="">
+          <img src="./assets/images/stories/<?php echo $verhaal['text_pic'] ?>" width="100" alt="<?php echo $verhaal['text_pic'] ?>">
           <p class="dashboard_item__name"><?php echo $verhaal['name'] ?></p>
           <p class="dashboard_item__type"><?php echo $verhaal['type'] ?></p>
           <button class="dashboard_item__button publiceer" type="submit" name="publiceer">Publiceer</button>
@@ -35,9 +33,7 @@
       <section>
       <form class="dashboard_flex" method="POST" enctype="multipart/form-data">
         <div class="dashboard_item edit">
-          <img
-            src="./assets/images/<?php if($verhaal['text_pic'] == "video" || $verhaal['text_pic'] == "audio") {  echo "default.png"; } else { echo "stories/".$verhaal['text_pic']; }?>"
-            width="100" alt="">
+        <img src="./assets/videos/stories/<?php echo $verhaal['text_pic'] ?>" width="100" alt="<?php echo $verhaal['text_pic'] ?>">
           <p class="dashboard_item__name"><?php echo $verhaal['name'] ?></p>
           <p class="dashboard_item__type"><?php echo $verhaal['type'] ?></p>
           <button class="dashboard_item__button publiceer" type="submit" name="publiceer">Publiceer</button>
@@ -60,9 +56,7 @@
       <section>
       <form class="dashboard_flex" method="POST" enctype="multipart/form-data">
         <div class="dashboard_item edit">
-          <img
-            src="./assets/images/<?php if($verhaal['text_pic'] == "video" || $verhaal['text_pic'] == "audio") {  echo "default.png"; } else { echo "stories/".$verhaal['text_pic']; }?>"
-            width="100" alt="">
+        <img src="./assets/audio/stories/<?php echo $verhaal['text_pic'] ?>" width="100" alt="<?php echo $verhaal['text_pic'] ?>">
           <p class="dashboard_item__name"><?php echo $verhaal['name'] ?></p>
           <p class="dashboard_item__type"><?php echo $verhaal['type'] ?></p>
           <button class="dashboard_item__button publiceer" type="submit" name="publiceer">Publiceer</button>
@@ -72,9 +66,15 @@
         <div class="dashboard_item__main">
         <p>Mijn naam is  <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">, en dit is mijn verhaal:</p>
         <input class="hidden" type="text" name="story" value="<?php echo $verhaal['story_content'] ?>">
-        <audio controls>
+        <!-- <audio controls>
           <source src="./assets/audio/stories/<?php echo $verhaal['story_content'] ?>" type="audio/mpeg">
-        </audio>
+        </audio> -->
+        <span class="hidden waveform_content"><?php echo $verhaal['story_content'] ?></span>
+        <input type="button" id="btn-play" />
+        <div id="audio-spectrum"></div>
+
+        </div>
+        <button class="button">button</button>
         </div>
       </form>
     </section>

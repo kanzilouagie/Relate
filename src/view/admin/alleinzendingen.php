@@ -9,7 +9,15 @@
   <section class="dashboard_main storyitems">
     <?php foreach ($verhalen as $verhaal) { ?>
       <div class="dashboard_item">
-        <img src="./assets/images/<?php if($verhaal['text_pic'] == "video" || $verhaal['text_pic'] == "audio") {  echo "default.png"; } else { echo "stories/".$verhaal['text_pic']; }?>" width="100" alt="">
+        <img src="./assets/<?php
+        if($verhaal['type'] == "video") {
+          echo "videos/stories/".$verhaal['text_pic'];
+        }
+        else if($verhaal['type'] == "audio") {
+           echo "audio/stories/".$verhaal['text_pic'];
+        } else if($verhaal['type'] == "text") {
+           echo "images/stories/".$verhaal['text_pic'];
+        }?>" width="100" alt="">
         <p class="dashboard_item__name"><?php echo $verhaal['name'] ?></p>
         <p class="dashboard_item__type"><?php echo $verhaal['type'] ?></p>
         <a class="dashboard_item__button" href="index.php?page=edit&id=<?php echo $verhaal['id'] ?>">Bekijk inzending</a>

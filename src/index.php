@@ -69,6 +69,7 @@
   $route = $routes[$_GET['page']];
   $controllerName = $route['controller'] . 'Controller';
 
+
   require_once __DIR__ . '/controller/' . $controllerName . '.php';
 
   $controllerObj = new $controllerName();
