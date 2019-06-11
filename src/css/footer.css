@@ -5,6 +5,9 @@ footer {
 }
 
 .footer_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 10rem;
   margin: 0 auto;
   padding-bottom: 4rem;
