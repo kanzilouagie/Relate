@@ -739,9 +739,10 @@ main {
 /* .gutter_image_01 {
   background-image: url('./assets/images/twotales/twotales_01_left01.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right;
 } */
+
 /*
 nav {
   height: 100px;
