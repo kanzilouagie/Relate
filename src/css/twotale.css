@@ -63,3 +63,22 @@
   width: 30rem;
   margin-left: 10rem;
 }
+
+.twotale_text h2 {
+  font-family: 'gotham_bold';
+  font-size: 2rem;
+}
+
+.twotale_smalltext {
+  font-family: 'gotham_light';
+  font-size: 1rem;
+}
+
+.twotale_subtext {
+  font-family: 'gotham_medium';
+  font-size: 1.5rem;
+}
+
+.twotale_text .vr_responsive {
+  background-color: white;
+}

@@ -69,7 +69,7 @@ $('#list1').scroll( function() {
 <section class="twotale_flex">
 <div id="list1" class="disable-scrollbars">
   <div class="gutter">
-<div class="twotale_text">
+  <div class="twotale_text">
       <h2>MADAM BUTTERFLY</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et eveniet in hic ipsum corporis dolores quis iste omnis enim id dolorum, excepturi culpa adipisci soluta sunt itaque quia a.</p>
     </div>
