@@ -1,9 +1,9 @@
 .verhalen_grid {
-  margin: 5rem auto;
+  margin: 4rem;
   width: 150rem;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(5, 1.4fr);
+  grid-template-columns: repeat(4, 1.4fr);
   grid-template-rows: repeat(1, 1fr);
   grid-auto-rows: 1fr;
   grid-auto-flow: dense;
@@ -103,4 +103,16 @@
 
 .box_info__user {
   font-style: oblique;
+}
+
+.verhalen_container {
+  display: flex;
+}
+
+.verhalen_grid_right {
+  width: 30vw;
+  background-color: #ef4352;
+  background-image: url(../assets/images/header_Home2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
