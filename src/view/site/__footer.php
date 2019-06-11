@@ -3,7 +3,7 @@
   <img  src="./assets/images/logo.png" alt="" >
   </div>
 
-  <div class="footer_flex">
+  <div class="footer_grid">
     <section class="footer_links">
       <h3 class="footer_title">links:</h3>
       <a href=""><p>www.operaballet.be</p></a>
@@ -12,9 +12,10 @@
       <a href=""><p>www.gent.be</p></a>
     </section>
     <section class="footer_form">
-      <form action="POST">
-        <input type="text">
-        <input type="submit">
+      <p>We houden je op de hoogte:</p>
+      <form action="">
+        <input class="footer_text_input" type="text" placeholder="Jouw e-mail">
+        <input class="footer_text_submit" type="submit">
       </form>
     </section>
     <section class="footer_navigatie">
