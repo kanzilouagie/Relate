@@ -37,21 +37,33 @@ $('#list1').scroll( function() {
   <div class="gutter">
     <div class="twotale_text">
       <h2>MADAM BUTTERFLY</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et eveniet in hic ipsum corporis dolores quis iste omnis enim id dolorum, excepturi culpa adipisci soluta sunt itaque quia a.</p>
+      <div class="vr_text">
+      <div class="vr_responsive">&nbsp;</div>
+        <p class="twotale_subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+        <p class="twotale_smalltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit mollitia veniam dolor quam officiis tempora corporis labore! Qui impedit saepe blanditiis rerum ea est quasi error aut necessitatibus praesentium?</p>
     </div>
     <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
   <div class="gutter">
   <div class="twotale_text">
       <h2>MADAM BUTTERFLY</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et eveniet in hic ipsum corporis dolores quis iste omnis enim id dolorum, excepturi culpa adipisci soluta sunt itaque quia a.</p>
+      <div class="vr_text">
+      <div class="vr_responsive">&nbsp;</div>
+        <p class="twotale_subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+        <p class="twotale_smalltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit mollitia veniam dolor quam officiis tempora corporis labore! Qui impedit saepe blanditiis rerum ea est quasi error aut necessitatibus praesentium?</p>
     </div>
   <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
   <div class="gutter">
   <div class="twotale_text">
       <h2>MADAM BUTTERFLY</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et eveniet in hic ipsum corporis dolores quis iste omnis enim id dolorum, excepturi culpa adipisci soluta sunt itaque quia a.</p>
+      <div class="vr_text">
+      <div class="vr_responsive">&nbsp;</div>
+        <p class="twotale_subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+        <p class="twotale_smalltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit mollitia veniam dolor quam officiis tempora corporis labore! Qui impedit saepe blanditiis rerum ea est quasi error aut necessitatibus praesentium?</p>
     </div>
   <img src="./assets/images/twotales/twotales_01_left01.png" alt="" >
   </div>
@@ -60,12 +72,36 @@ $('#list1').scroll( function() {
 <div id="list2" class="disable-scrollbars">
       <div class="gutter">
           <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+          <div class="twotale_text">
+      <h2>MADAM BUTTERFLY</h2>
+      <div class="vr_text">
+      <div class="vr_responsive">&nbsp;</div>
+        <p class="twotale_subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+        <p class="twotale_smalltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit mollitia veniam dolor quam officiis tempora corporis labore! Qui impedit saepe blanditiis rerum ea est quasi error aut necessitatibus praesentium?</p>
+    </div>
       </div>
       <div class="gutter">
           <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+          <div class="twotale_text">
+      <h2>MADAM BUTTERFLY</h2>
+      <div class="vr_text">
+      <div class="vr_responsive">&nbsp;</div>
+        <p class="twotale_subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+        <p class="twotale_smalltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit mollitia veniam dolor quam officiis tempora corporis labore! Qui impedit saepe blanditiis rerum ea est quasi error aut necessitatibus praesentium?</p>
+    </div>
       </div>
       <div class="gutter">
           <img src="./assets/images/twotales/twotales_01_right01.png" alt="" >
+          <div class="twotale_text">
+      <h2>MADAM BUTTERFLY</h2>
+      <div class="vr_text">
+      <div class="vr_responsive">&nbsp;</div>
+        <p class="twotale_subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+        <p class="twotale_smalltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit mollitia veniam dolor quam officiis tempora corporis labore! Qui impedit saepe blanditiis rerum ea est quasi error aut necessitatibus praesentium?</p>
+    </div>
       </div>
 </div>
 </section>

@@ -608,7 +608,7 @@ main {
 
 .upload_manieren {
   display: flex;
-  height: 60vh;
+  /* height: 60vh; */
   width: 100vw;
   background-color: #232222;
   background-image: url('assets/images/upload_manieren.png');
@@ -619,30 +619,33 @@ main {
 }
 
 .upload_manieren_flex {
-  margin: 4rem;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 4rem;
 }
 
 .upload_manieren_container {
   background-color: #ef4352;
-  width: 100%;
-  height: 70%;
   border-radius: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 4rem;
+  padding: 4rem;
 }
 
 .upload_manier {
   display: flex;
   width: 40rem;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
 }
 
 .upload_manier .vr_responsive {
   background-color: white;
+  margin: 1rem;
+  height: 10rem;
 }
 
 .upload_manier h2 {
@@ -710,9 +713,17 @@ main {
 
 #list2 .gutter img {
   height: 70vh;
-  position: relative;
+  justify-self: start;
+  /* position: absolute;
   left: 0;
-  float: left;
+  float: left; */
+}
+
+#list1 .gutter img {
+  height: 70vh;
+  justify-self: end; /* position: absolute;
+  left: 0;
+  float: left; */
 }
 
 .disable-scrollbars::-webkit-scrollbar {
@@ -739,9 +750,10 @@ main {
 /* .gutter_image_01 {
   background-image: url('./assets/images/twotales/twotales_01_left01.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right;
 } */
+
 /*
 nav {
   height: 100px;
