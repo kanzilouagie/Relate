@@ -710,9 +710,17 @@ main {
 
 #list2 .gutter img {
   height: 70vh;
-  position: absolute;
+  justify-self: start;
+  /* position: absolute;
   left: 0;
-  float: left;
+  float: left; */
+}
+
+#list1 .gutter img {
+  height: 70vh;
+  justify-self: end; /* position: absolute;
+  left: 0;
+  float: left; */
 }
 
 .disable-scrollbars::-webkit-scrollbar {

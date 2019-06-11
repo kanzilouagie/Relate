@@ -35,16 +35,17 @@
 .gutter {
   height: 70vh;
   width: 50vw;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   /* justify-content: space-between; */
-  position: relative;
+  /* position: relative; */
 }
 
 .gutter img {
   height: 70vh;
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  float: right;
+  float: right; */
 }
 
 .panelCon .gutter img {
@@ -61,7 +62,8 @@
   align-items: flex-start;
   justify-content: center;
   width: 30rem;
-  margin-left: 10rem;
+  align-self: center;
+  justify-self: center;
 }
 
 .twotale_text h2 {
