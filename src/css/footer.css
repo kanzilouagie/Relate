@@ -15,6 +15,7 @@ footer {
 .footer_grid {
   display: grid;
   grid-template-areas: 'links form navigation';
+  align-items: center;
 }
 
 .footer_form p {
@@ -31,6 +32,12 @@ footer {
   grid-area: form;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_form form {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -93,11 +100,12 @@ footer {
   .footer_grid {
     grid-template-areas:
       'form'
-      'links'
-      'navigation';
+      'navigation'
+      'links';
 
     align-items: center;
     justify-content: center;
+    grid-gap: 2rem;
   }
 
   .footer_links {

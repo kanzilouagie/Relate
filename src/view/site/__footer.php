@@ -5,11 +5,7 @@
 
   <div class="footer_grid">
     <section class="footer_links">
-      <h3 class="footer_title">links:</h3>
-      <a href=""><p>www.operaballet.be</p></a>
-      <a href=""><p>www.vlaanderen.be</p></a>
-      <a href=""><p>www.antwerpen.be</p></a>
-      <a href=""><p>www.gent.be</p></a>
+      <a href=""><img  src="./assets/images/OBV_logo.png" alt="" height="100px"></a>
     </section>
     <section class="footer_form">
       <p>We houden je op de hoogte:</p>
