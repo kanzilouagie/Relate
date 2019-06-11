@@ -51,10 +51,4 @@
 
 </div>
 
-  <!-- <p><?php echo $verhaal['name'] ?></p>
-  <p><?php echo $verhaal['email'] ?></p>
-  <p><?php echo $verhaal['type'] ?></p>
-  <p><?php echo $verhaal['story_name'] ?></p>
-  <p><?php echo $verhaal['story_content'] ?></p>
-  <p><?php echo $verhaal['published'] ?></p> -->
   <?php include '__footer.php'?>
