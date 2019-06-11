@@ -36,12 +36,13 @@
   height: 70vh;
   width: 50vw;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  position: relative;
 }
 
 .gutter img {
   height: 70vh;
-  position: relative;
+  position: absolute;
   right: 0;
   float: right;
 }
@@ -59,4 +60,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  width: 30rem;
+  margin-left: 10rem;
 }

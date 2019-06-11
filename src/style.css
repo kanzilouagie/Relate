@@ -710,7 +710,7 @@ main {
 
 #list2 .gutter img {
   height: 70vh;
-  position: relative;
+  position: absolute;
   left: 0;
   float: left;
 }
