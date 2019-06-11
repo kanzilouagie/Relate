@@ -18,6 +18,13 @@ class VerhaalDAO extends DAO{
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
+  public function selectAllByRelates(){
+    $sql = "SELECT * FROM `verhalen` ORDER BY `relates` DESC";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
   public function addRelate($id){
     $sql = "UPDATE `verhalen`  SET `relates` = `relates` + 1 WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);

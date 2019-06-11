@@ -18,7 +18,7 @@ class SiteController extends Controller{
 
   public function verhalen(){
     $verhaalDAO = new VerhaalDAO();
-    $verhalen = $verhaalDAO->selectAll();
+    $verhalen = $verhaalDAO->selectAllByRelates();
     $this->set('verhalen', $verhalen);
     $this->set('title','Verhalen');
     $this->set('backgroundcolor', '');
