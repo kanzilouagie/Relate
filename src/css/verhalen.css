@@ -1,6 +1,7 @@
 .verhalen_grid {
-  margin: 4rem;
-  width: 150rem;
+  padding: 4rem;
+  background-color: #222121;
+  width: 100%;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(4, 1.4fr);
@@ -9,24 +10,24 @@
   grid-auto-flow: dense;
 
   @media screen and (max-width: 1500px) {
-    width: 120rem;
+    width: 100%;
     grid-template-columns: repeat(4, 1.4fr);
   }
 
   @media screen and (max-width: 1200px) {
-    width: 90rem;
+    width: 100%;
     grid-template-columns: repeat(3, 1.4fr);
   }
 
   @media screen and (max-width: 900px) {
-    width: 60rem;
+    width: 100%;
     grid-template-columns: repeat(2, 1.4fr);
   }
 
   @media screen and (max-width: 600px) {
     grid-gap: 0;
     grid-row-gap: 1rem;
-    width: 70%;
+    width: 100%;
     grid-template-columns: repeat(1, 1.4fr);
     grid-template-rows: repeat(1, 49vw);
     grid-auto-rows: 49vw;
@@ -107,12 +108,32 @@
 
 .verhalen_container {
   display: flex;
+  background-color: #222121;
 }
 
 .verhalen_grid_right {
-  width: 30vw;
+  width: 20vw;
   background-color: #ef4352;
   background-image: url(../assets/images/header_Home2.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+.verhaal_title {
+  margin: 4rem;
+}
+
+.eigen_verhalen {
+  width: 80vw;
+}
+
+@media screen and (max-width: 900px) {
+
+  .verhalen_grid_right {
+    display: none;
+  }
+
+  .eigen_verhalen {
+    width: 100%;
+  }
 }
