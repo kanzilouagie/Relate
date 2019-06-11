@@ -36,7 +36,9 @@
   height: 70vh;
   width: 50vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'a b'
+    'c d';
   /* justify-content: space-between; */
   /* position: relative; */
 }
