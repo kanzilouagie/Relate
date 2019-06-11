@@ -15,6 +15,26 @@ footer {
   text-transform: uppercase;
 }
 
+.footer_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 20rem;
+}
+
+.footer_logos a {
+  margin: .5rem;
+}
+
+svg {
+  fill: white;
+}
+
+svg:hover {
+  fill: #ef4352;
+}
+
 .footer_grid {
   display: grid;
   grid-template-areas: 'links form navigation';
@@ -57,7 +77,9 @@ footer {
 
 .footer_copyright {
   text-align: center;
-  margin: 4rem;
+  margin-top: 4rem;
+  font-family: 'gotham_light';
+  font-size: 1.2rem;
 }
 
 .footer_title {
@@ -75,17 +97,17 @@ footer {
 
 .footer_text_input {
   height: 4rem;
-  width: 30rem;
-  border-radius: 20px;
+  width: 35rem;
   border: none;
   text-align: center;
 }
 
 .footer_text_submit {
+  font-family: 'gotham_medium';
+  line-height: 4rem;
   height: 4rem;
   width: 10rem;
   margin-left: -4rem;
-  border-radius: 20px;
   border: none;
   background-color: #ef4352;
   color: white;
