@@ -18,6 +18,14 @@ class VerhaalDAO extends DAO{
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
+  public function addRelate($id){
+    $sql = "UPDATE `verhalen`  SET `relates` = `relates` + 1 WHERE `id` = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
+
   public function insert($data){
     $errors = $this->validate($data);
     var_dump($errors);

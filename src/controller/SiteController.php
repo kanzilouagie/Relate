@@ -55,17 +55,19 @@ class SiteController extends Controller{
             $fileNameNew = uniqid('', true).".".$fileActualExt;
             $fileDestination = "./assets/videos/stories/".$fileName;
             move_uploaded_file($fileTmpName, $fileDestination);
-            $data = array(
-              'name' => $_POST['fullname'],
-              'email' => $_POST['email'],
-              'type' => "video",
-              'story_name' => $_POST['char_name'],
-              'story_content' => $fileName,
-              'published' => "false",
-              'anonymous' => $_POST['anonymous'],
-              'relates' => 0,
-              'text_pic' => "video"
-            );
+            if(!isset($_POST['anonymous'])) {
+              $data['anonymous'] = 0;
+            } else {
+              $data['anonymous'] = 1;
+            }
+              $data['name'] = $_POST['fullname'];
+              $data['email'] = $_POST['email'];
+              $data['type'] = "video";
+              $data['story_name'] = $_POST['char_name'];
+              $data['story_content'] = $fileName;
+              $data['published'] = "false";
+              $data['relates'] = 0;
+              $data['text_pic'] = "video";
             $fileImg = $_FILES['file_image'];
       $fileNameImg = $_FILES['file_image']['name'];
       $fileTmpNameImg = $_FILES['file_image']['tmp_name'];
@@ -132,17 +134,19 @@ class SiteController extends Controller{
             $fileNameNew = uniqid('', true).".".$fileActualExt;
             $fileDestination = "./assets/audio/stories/".$fileName;
             move_uploaded_file($fileTmpName, $fileDestination);
-            $data = array(
-              'name' => $_POST['fullname'],
-              'email' => $_POST['email'],
-              'type' => "audio",
-              'story_name' => $_POST['char_name'],
-              'story_content' => $fileName,
-              'published' => "false",
-              'anonymous' => $_POST['anonymous'],
-              'relates' => 0,
-              'text_pic' => "audio"
-            );
+            if(!isset($_POST['anonymous'])) {
+              $data['anonymous'] = 0;
+            } else {
+              $data['anonymous'] = 1;
+            }
+              $data['name'] = $_POST['fullname'];
+              $data['email'] = $_POST['email'];
+              $data['type'] = "audio";
+              $data['story_name'] = $_POST['char_name'];
+              $data['story_content'] = $fileName;
+              $data['published'] = "false";
+              $data['relates'] = 0;
+              $data['text_pic'] = "audio";
       $fileImg = $_FILES['file_image'];
       $fileNameImg = $_FILES['file_image']['name'];
       $fileTmpNameImg = $_FILES['file_image']['tmp_name'];
@@ -209,6 +213,11 @@ class SiteController extends Controller{
             $fileNameNew = uniqid('', true).".".$fileActualExt;
             $fileDestination = "./assets/images/stories/".$fileName;
             move_uploaded_file($fileTmpName, $fileDestination);
+            if(!isset($_POST['anonymous'])) {
+              $data['anonymous'] = 0;
+            } else {
+              $data['anonymous'] = 1;
+            }
             $data = array(
               'name' => $_POST['fullname'],
               'email' => $_POST['email'],
@@ -216,7 +225,6 @@ class SiteController extends Controller{
               'story_name' => $_POST['char_name'],
               'story_content' => $_POST['story'],
               'published' => "false",
-              'anonymous' => $_POST['anonymous'],
               'relates' => 0,
               'text_pic' => $fileName
             );
@@ -241,6 +249,15 @@ class SiteController extends Controller{
     $id = $_GET['id'];
     $verhaal = $verhaalDAO->selectById($id);
     $this->set('verhaal', $verhaal);
+    $boolid = $id . 'relate';
+    if(isset($_POST['relate'])) {
+      if(!isset($_SESSION[$boolid]) || $_SESSION[$boolid] === false) {
+        $verhaalDAO->addRelate($id);
+        header("Refresh:0");
+        $_SESSION[$boolid] = true;
+      }
+
+    }
   }
 
 

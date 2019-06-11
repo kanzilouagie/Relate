@@ -1,6 +1,7 @@
 <?php include '__navigation.php'?>
 <main>
   <section class="main_detail">
+  <button class="toggle_menu hidden"></button>
     <article class="article_detail">
 
     <?php if($verhaal['type'] == "text") { ?>
@@ -8,9 +9,9 @@
     <?php } ?>
 
       <?php if($verhaal['type'] == "audio") { ?>
-        <audio controls>
-          <source src="./assets/audio/stories/<?php echo $verhaal['story_content'] ?>" type="audio/mpeg">
-        </audio>
+        <span class="hidden waveform_content"><?php echo $verhaal['story_content'] ?></span>
+        <input type="button" id="btn-play" />
+        <div id="audio-spectrum"></div>
       <?php } ?>
 
       <?php if($verhaal['type'] == "video") { ?>
@@ -21,9 +22,13 @@
 
     <p class="detail_info__title"><?php echo $verhaal['story_name'] ?></p>
     <p class="detail_info__auteur"><span class="regular">Gemaakt door: </span><?php echo $verhaal['name'] ?></p>
+    <?php if($verhaal['type'] == "text") { ?>
     <p class="detail_info__content"><?php echo $verhaal['story_content'] ?></p>
+    <?php } ?>
     <div class="button_flex">
-    <button class="box_info__button">Relate</button>
+    <form method="POST">
+    <button class="box_info__button" type="submit" name="relate">Relate</button>
+    </form>
     </div>
     <p class="detail_info__relates"><?php echo $verhaal['relates'] ?> anderen kunnen zich in deze situatie vinden. </p>
     </article>

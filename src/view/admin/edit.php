@@ -66,15 +66,10 @@
         <div class="dashboard_item__main">
         <p>Mijn naam is  <input type="text" name="char_name" value="<?php echo $verhaal['story_name'] ?>">, en dit is mijn verhaal:</p>
         <input class="hidden" type="text" name="story" value="<?php echo $verhaal['story_content'] ?>">
-        <!-- <audio controls>
-          <source src="./assets/audio/stories/<?php echo $verhaal['story_content'] ?>" type="audio/mpeg">
-        </audio> -->
         <span class="hidden waveform_content"><?php echo $verhaal['story_content'] ?></span>
-        <input type="button" id="btn-play" />
+        <input type="button" id="btn-play" disabled="disabled" />
         <div id="audio-spectrum"></div>
-
         </div>
-        <button class="button">button</button>
         </div>
       </form>
     </section>
