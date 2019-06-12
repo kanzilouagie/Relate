@@ -14,12 +14,14 @@ class SiteController extends Controller{
     $verhaalDAO = new VerhaalDAO();
     $verhalen = $verhaalDAO->selectAll();
     $this->set('verhalen', $verhalen);
+    $this->set('activestate','class="active"');
   }
 
   public function verhalen(){
     $verhaalDAO = new VerhaalDAO();
     $this->set('title','Verhalen');
     $this->set('backgroundcolor', '');
+    $this->set('activestate','class="active"');
 
     if(!isset($_GET['type'])) {
       $type = '';
@@ -59,6 +61,7 @@ class SiteController extends Controller{
     $verhaalDAO = new VerhaalDAO();
     $this->set('title','TwoTales');
     $this->set('backgroundcolor', '');
+    $this->set('activestate','class="active"');
 
   }
 
@@ -221,6 +224,7 @@ class SiteController extends Controller{
   }
 
   public function text_upload() {
+    $this->set('activestate','class="active"');
     $this->set('backgroundcolor', '');
     $verhaalDAO = new VerhaalDAO();
     $this->set('title','Upload text');

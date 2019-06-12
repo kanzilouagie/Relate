@@ -460,3 +460,7 @@
 .admin_icon:hover svg {
   fill: #ef4352;
 }
+
+.active {
+  color: #ef4352 !important;
+}
