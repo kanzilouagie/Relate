@@ -9,7 +9,7 @@
                 <ul class="navlinks">
                     <li><a href="index.php?page=home">Home</a></li>
                     <li><a href="index.php?page=verhalen">Verhalen</a></li>
-                    <li><a href="index.php?page=twotales">TwoTales</a></li>
+                    <li><a href="index.php?page=twotales">Relates</a></li>
                     <li class="admin_li"><a href="index.php?page=admin"><div class="admin_icon"><svg width="30px" height="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 474.565 474.565" style="enable-background:new 0 0 474.565 474.565;" xml:space="preserve">
 <g>
