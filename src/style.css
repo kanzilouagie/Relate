@@ -60,6 +60,7 @@ body {
 .fold {
   display: flex;
   color: white;
+  padding-top: 8rem;
 }
 
 .fold_black {
