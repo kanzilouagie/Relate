@@ -5,7 +5,7 @@
       <h1 class="hidden">admin</h1>
       <section class="admin_home">
         <h2 class="hidden">home</h2>
-        <a href="index.php?page=logged_in"><img src="./assets/images/logo.png" alt="logo" width="100" height="58" /></a>
+        <a href="index.php?page=verhalen"><img src="./assets/images/logo.png" alt="logo" width="100" height="58" /></a>
       </section>
       <section class="admin_nav__inzendingen">
         <h2>Inzendingen</h2>
