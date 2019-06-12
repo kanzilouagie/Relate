@@ -1,18 +1,24 @@
 .main_detail {
   width: 100%;
   padding-top: 8rem;
+  background: #232222;
 }
 
 .article_detail {
+  color: white;
   padding: 5rem;
-  margin: 5rem auto;
+  margin: 0 auto;
   width: 90rem;
-  background: #f7f7f7;
-  border-radius: 2rem;
+
+  & video {
+    width: 100%;
+    height: auto;
+  }
 
   @media only screen and (max-width: 960px) {
-    width: 90%;
+    width: 100%;
   }
+
 }
 
 .article_detail__image {
@@ -47,6 +53,11 @@
   font-size: 2rem;
   margin-bottom: 5rem;
   line-height: 2.5rem;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
 }
 
 .button_flex {
@@ -57,9 +68,11 @@
 }
 
 .detail_info__relates {
-  color: #5e5e5e;
+  font-weight: bold;
+  color: white;
   margin-top: 2rem;
-  text-align: center;
+  text-align: right;
+  padding-bottom: 2rem;
 }
 
 .box_info__button {

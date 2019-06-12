@@ -16,11 +16,11 @@
     <div class="left_filter">
         <input id="checkbox_1" type="radio" name="type" value="" <?php if(!isset($_GET['type']) || $_GET['type'] == "") { echo 'checked'; }?>>
         <label for="checkbox_1">Alle</label>
-        <input id="checkbox_2" type="radio" name="type" value="text" <?php if(!isset($_GET['type']) || $_GET['type'] == "text") { echo 'checked'; }?>>
+        <input id="checkbox_2" type="radio" name="type" value="text" <?php if(isset($_GET['type']) && $_GET['type'] == "text") { echo 'checked'; }?>>
         <label for="checkbox_2"><img src="./assets/images/upload_manieren_write.png" alt="feather"></label>
-        <input id="checkbox_3" type="radio" name="type" value="video" <?php if(!isset($_GET['type']) || $_GET['type'] == "video") { echo 'checked'; }?>>
+        <input id="checkbox_3" type="radio" name="type" value="video" <?php if(isset($_GET['type']) && $_GET['type'] == "video") { echo 'checked'; }?>>
         <label for="checkbox_3"><img src="./assets/images/upload_manieren_video.png" alt="feather"></label>
-        <input id="checkbox_4" type="radio" name="type" value="audio" <?php if(!isset($_GET['type']) || $_GET['type'] == "audio") { echo 'checked'; }?>>
+        <input id="checkbox_4" type="radio" name="type" value="audio" <?php if(isset($_GET['type']) && $_GET['type'] == "audio") { echo 'checked'; }?>>
         <label for="checkbox_4"><img src="./assets/images/upload_manieren_spraak.png" alt="feather"></label>
     </div>
     <div class="right_filter">

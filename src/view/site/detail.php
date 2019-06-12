@@ -25,12 +25,12 @@
     <?php if($verhaal['type'] == "text") { ?>
     <p class="detail_info__content"><?php echo $verhaal['story_content'] ?></p>
     <?php } ?>
+    <p class="detail_info__relates"><?php echo $verhaal['relates'] ?> anderen kunnen zich in deze situatie vinden. </p>
     <div class="button_flex">
     <form method="POST">
     <button class="box_info__button" type="submit" name="relate">Relate</button>
     </form>
     </div>
-    <p class="detail_info__relates"><?php echo $verhaal['relates'] ?> anderen kunnen zich in deze situatie vinden. </p>
     </article>
   </section>
 </main>
