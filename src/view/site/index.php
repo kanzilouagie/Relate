@@ -48,7 +48,12 @@ $('#list1').scroll( function() {
           </span>
         </span>
       </div>
-      <p class="scroll_text">scroll</p>
+      <div class="scroll_lines">
+        <div class="vr_of_line">&nbsp;</div>
+        <p class="scroll_text">SCROLL</p>
+        <div class="vr_of_line">&nbsp;</div>
+      </div>
+
     </div>
   </div>
 </section>

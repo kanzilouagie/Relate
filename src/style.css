@@ -81,32 +81,30 @@ body {
   display: flex;
   color: white;
   padding-top: 8rem;
+  height: 80vh;
 }
 
 .fold_black {
   background-color: #232222;
   width: 70vw;
-  height: 70vh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.fold_text {
-  margin-left: 4rem;
+  overflow: hidden;
 }
 
 .fold_black_img {
   position: relative;
   right: 0;
-  height: 70vh;
+  height: 100%;
   float: right;
 }
 
 .fold_red_img {
   position: relative;
   right: 0;
-  height: 70vh;
+  height: 100%;
   float: left;
 }
 
@@ -114,12 +112,27 @@ body {
   position: relative;
   background-color: #ef4352;
   width: 30vw;
-  height: 70vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fold_text {
+  margin-left: 4rem;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 scroll
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.scroll_lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll_lines div {
+  margin: 1rem;
+}
 
 .scroll-container {
   display: flex;
@@ -129,13 +142,14 @@ scroll
   bottom: 0;
   right: 0;
   margin-right: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .scroll-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 1rem;
 }
 
 .scroll-btn .mouse {
@@ -164,6 +178,7 @@ scroll
 
 .scroll_text {
   writing-mode: vertical-rl;
+  font-size: 1rem;
 }
 
 @keyframes ani-mouse {
@@ -235,7 +250,7 @@ scroll
 }
 
 .vr_of_line {
-  height: 6rem;
+  height: 4rem;
   width: 1px;
   background-color: white;
 }
