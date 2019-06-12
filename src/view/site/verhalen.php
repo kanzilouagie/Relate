@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="verhalen_filter">
-    <form action="index.php">
+    <form action="index.php" class="filter">
     <input type="hidden" name="page" value="verhalen">
       <input type="radio" name="type" value="" <?php if(!isset($_GET['type']) || $_GET['type'] == "") { echo 'checked'; }?>>
       <label for="type">Alles</label>

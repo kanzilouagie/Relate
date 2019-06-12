@@ -41,6 +41,7 @@
 <body <?php echo($backgroundcolor);  ?>>
   <?php  echo($content);  ?>
   <script src="https://unpkg.com/wavesurfer.js"></script>
+  <script src="js/filter.js"></script>
   <?php echo($js) ?>
 </body>
 </html>
