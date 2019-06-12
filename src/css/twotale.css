@@ -7,29 +7,110 @@
 
 .twotale_subtitle {
   width: 60rem;
+  margin-bottom: 3rem;
 }
 
-.twotales_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.twotales_link {
-width: 100%;
-
-& img {
+.twotales_grid {
+  background-color: #222121;
   width: 100%;
-}
+  display: grid;
+  grid-template-columns: repeat(4, 1.4fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-flow: dense;
+
+  @media screen and (max-width: 1500px) {
+    width: 100%;
+    grid-template-columns: repeat(4, 1.4fr);
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    grid-template-columns: repeat(3, 1.4fr);
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    grid-template-columns: repeat(2, 1.4fr);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-gap: 0;
+    grid-row-gap: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(1, 1.4fr);
+    grid-template-rows: repeat(1, 49vw);
+    grid-auto-rows: 49vw;
+  }
 }
 
 .twotale_main__header {
   padding: 0 3rem;
 }
 
-
-.twotales_container__info {
-  position: absolute;
+.twotales_box {
+  background: none;
   width: 100%;
+  height: 100%;
+}
+
+.twotales_box__link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.twotales_box__link:hover > .box_tales {
+  background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .6) 81%);
+}
+
+.box_tales {
   display: flex;
-  justify-content: center;
+  padding: 4rem 2rem;
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .3) 81%);
+
+  & hr {
+    margin-bottom: 2rem;
+    width: 70%;
+    color: #ef4352;
+  }
+}
+
+.box_tales__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.box_tales__relates {
+  font-weight: bold;
+  font-size: 3rem;
+  -webkit-text-stroke-width: 1px;
+  text-transform: uppercase;
+  -webkit-text-stroke-color: white;
+  color: #232222;
+
 }
