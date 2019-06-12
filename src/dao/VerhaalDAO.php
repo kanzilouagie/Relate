@@ -18,9 +18,18 @@ class VerhaalDAO extends DAO{
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
-  public function selectAllByRelates(){
-    $sql = "SELECT * FROM `verhalen` ORDER BY `relates` DESC";
+  public function selectAllByRelates($type = '%'){
+    $sql = "SELECT * FROM `verhalen` WHERE 1 ";
+
+    if(!empty($type)) {
+      $sql .= "AND `type` LIKE :type";
+      }
+
     $stmt = $this->pdo->prepare($sql);
+
+    if(!empty($type)) {
+    $stmt->bindValue(':type', '%'.$type.'%');
+      }
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }

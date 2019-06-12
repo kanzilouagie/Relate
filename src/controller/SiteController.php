@@ -18,10 +18,41 @@ class SiteController extends Controller{
 
   public function verhalen(){
     $verhaalDAO = new VerhaalDAO();
-    $verhalen = $verhaalDAO->selectAllByRelates();
-    $this->set('verhalen', $verhalen);
     $this->set('title','Verhalen');
     $this->set('backgroundcolor', '');
+
+    if(!isset($_GET['type'])) {
+      $type = '';
+    } else {
+      $type = $_GET['type'];
+    }
+
+    $verhalen = $verhaalDAO->selectAllByRelates($type);
+
+    if(!isset($_GET['sort']) || $_GET['sort'] == "recent") {
+      function compare_id($a, $b)
+    {
+      return strnatcmp($a['id'], $b['id']);
+    }
+    usort($verhalen, 'compare_id');
+    } else {
+      function compare_relates($a, $b)
+    {
+      return strnatcmp($b['relates'], $a['relates']);
+    }
+    usort($verhalen, 'compare_relates');
+    }
+
+    $this->set('verhalen', $verhalen);
+
+    if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
+
+      header('Content-Type: application/json');
+      $data = array();
+      $data['verhalen'] = $verhalen;
+      echo json_encode($data);
+      exit();
+    }
   }
 
   public function twotales(){
