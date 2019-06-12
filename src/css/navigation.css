@@ -458,3 +458,19 @@
 .admin_icon:hover svg {
   fill: #ef4352;
 }
+
+.verhalen_filter {
+  margin: 4rem;
+  color: white;
+}
+
+.filter_submit {
+  font-family: 'gotham_medium';
+
+  height: 4rem;
+  line-height: 4rem;
+  width: 10rem;
+  border: none;
+  background-color: #ef4352;
+  color: white;
+}
