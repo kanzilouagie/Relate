@@ -55,9 +55,6 @@
 }
 
 .story_box__link:hover > .box_info {
-  display: block;
-  display: flex;
-
   background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .6) 81%);
 }
 
@@ -69,7 +66,7 @@
 }
 
 .box_info {
-  display: none;
+  display: flex;
   border-radius: 1rem;
   padding: 2rem;
   position: absolute;
@@ -81,6 +78,7 @@
   justify-content: space-between;
   align-items: flex-end;
   color: white;
+  background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .3) 81%);
 }
 
 .box_info__left,
