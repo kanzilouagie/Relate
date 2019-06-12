@@ -23,7 +23,7 @@
       <label for="type">Audio</label>
       <select name="sort">
         <option value="recent" <?php if(!isset($_GET['sort']) || $_GET['sort'] == "recent") { echo 'selected'; }?>>meest recent</option>
-        <option value="relates" <?php if($_GET['sort'] == "relates") { echo 'selected'; }?>>relates</option>
+        <option value="relates" <?php if(isset($_GET['sort']) && $_GET['sort'] == "relates") { echo 'selected'; }?>>relates</option>
       </select>
       <input class="filter_submit" type="submit" value="Filter">
     </form>
@@ -59,7 +59,6 @@
               echo "upload_manieren_spraak.png";
                } else  ?>" alt="feather">
           <p class="box_info__user">by <?php if($verhaal['anonymous'] == 1) { echo "anonymous";} else { echo $verhaal['name'];}?></p>
-          <!-- <button class="box_info__button">Relate</button> -->
         </div>
       </div>
     </a>
