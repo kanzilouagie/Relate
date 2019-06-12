@@ -15,8 +15,28 @@
 }
 
 @font-face {
+  font-family: 'gotham_narrow_book';
+  src: url(assets/fonts/GothamNarrow-Book.woff);
+}
+
+@font-face {
+  font-family: 'gotham_narrow_black';
+  src: url(assets/fonts/GothamNarrow-Black.woff);
+}
+
+@font-face {
   font-family: 'gotham_medium';
   src: url(assets/fonts/GothamMedium.woff);
+}
+
+@font-face {
+  font-family: 'monumentExtended_Regular';
+  src: url(assets/fonts/MonumentExtended-Regular.woff);
+}
+
+@font-face {
+  font-family: 'monumentExtended_Ultrabold';
+  src: url(assets/fonts/MonumentExtended-Ultrabold.woff);
 }
 
 @font-face {
@@ -61,32 +81,30 @@ body {
   display: flex;
   color: white;
   padding-top: 8rem;
+  height: 80vh;
 }
 
 .fold_black {
   background-color: #232222;
   width: 70vw;
-  height: 70vh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.fold_text {
-  margin-left: 4rem;
+  overflow: hidden;
 }
 
 .fold_black_img {
   position: relative;
   right: 0;
-  height: 70vh;
+  height: 100%;
   float: right;
 }
 
 .fold_red_img {
   position: relative;
   right: 0;
-  height: 70vh;
+  height: 100%;
   float: left;
 }
 
@@ -94,12 +112,27 @@ body {
   position: relative;
   background-color: #ef4352;
   width: 30vw;
-  height: 70vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fold_text {
+  margin-left: 4rem;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 scroll
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.scroll_lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll_lines div {
+  margin: 1rem;
+}
 
 .scroll-container {
   display: flex;
@@ -109,13 +142,14 @@ scroll
   bottom: 0;
   right: 0;
   margin-right: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .scroll-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 1rem;
 }
 
 .scroll-btn .mouse {
@@ -144,6 +178,7 @@ scroll
 
 .scroll_text {
   writing-mode: vertical-rl;
+  font-size: 1rem;
 }
 
 @keyframes ani-mouse {
@@ -203,6 +238,21 @@ scroll
   background-color: #ef4352;
   height: inherit;
   margin-right: 1rem;
+}
+
+.vr_of {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.vr_of_line {
+  height: 4rem;
+  width: 1px;
+  background-color: white;
 }
 
 .vr_text {
@@ -585,14 +635,25 @@ main {
 
 .upload_manieren {
   display: flex;
-  /* height: 60vh; */
-  width: 100vw;
+  width: 100%;
   background-color: #232222;
-  background-image: url('assets/images/upload_manieren.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
   color: white;
+}
+
+.upload_manier_logo_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16rem;
+}
+
+.upload_manier_logo_text img {
+  margin-bottom: 2rem;
+}
+
+.upload_manier_logo_subtext {
+  font-family: 'monumentExtended_Regular';
+  text-transform: uppercase;
 }
 
 .upload_manieren_flex {
@@ -600,15 +661,78 @@ main {
   display: flex;
   flex-direction: column;
   padding: 4rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
 }
 
 .upload_manieren_container {
   background-color: #ef4352;
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
   margin-top: 4rem;
   padding: 4rem;
+  width: 100%;
+  max-width: 140rem;
+}
+
+.can_you_relate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 50rem;
+  text-align: center;
+}
+
+.can_you_relate h2 {
+  font-family: 'monumentExtended_Regular';
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.can_you_relate div {
+  margin-bottom: 2rem;
+}
+
+.can_you_relate p {
+  font-family: 'gotham_narrow_book';
+}
+
+.can_you_relate p span {
+  font-family: 'gotham_narrow_black';
+}
+
+.h2_relate {
+  font-family: 'monumentExtended_Ultrabold';
+  color: #232222;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .upload_manieren_container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
+  }
+
+  .vr_of {
+    flex-direction: row;
+  }
+
+  .vr_of_line {
+    height: 1px;
+    width: 6rem;
+    margin: 2rem;
+    background-color: white;
+  }
+
+  .upload_manieren_container div {
+    margin-bottom: 2rem;
+  }
 }
 
 .upload_manier {
