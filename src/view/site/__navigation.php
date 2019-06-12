@@ -1,39 +1,46 @@
 
 <header class="header_home">
-<!-- <script>
-function nav() {
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+            <a href="index.php?page=home"><img  src="./assets/images/logo.png" alt="" height="50px" ></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.php?page=home">Home</a></li>
+                    <li><a href="index.php?page=verhalen">Verhalen</a></li>
+                    <li><a href="index.php?page=twotales">TwoTales</a></li>
+                    <li><a href="index.php?page=admin">Admin</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+</header>
 
-  var toggle = $('.nav-toggle'),
-      navContainer = $('.nav-container'),
-      navLink = $('.nav-container a');
+<script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+</script>
 
-  toggle.on('click', function(){
-    navContainer.toggleClass('active');
-  });
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 
-  navLink.on('click', function(){
-    navContainer.removeClass('active');
-  });
-
-};
-
-nav();
-</script> -->
-  <a href="index.php?page=home"><img  src="./assets/images/logo.png" alt="" height="50px" ></a>
+<!--
+<a href="index.php?page=home"><img  src="./assets/images/logo.png" alt="" height="50px" ></a>
   <nav class="navigation">
     <a href="index.php?page=home">home</a>
     <a href="index.php?page=verhalen">verhalen</a>
     <a href="index.php?page=twotales">TwoTales</a>
     <a href="index.php?page=admin">admin</a>
-  </nav>
-  <!-- <nav>
-  <div class="nav-logo"><a class="nav-logo" href="index.php?page=home"><img  src="./assets/images/logo.png" alt="" height="50px" ></a></div>
-  <div class="nav-container">
-  <a href="index.php?page=home">home</a>
-    <a href="index.php?page=verhalen">verhalen</a>
-    <a href="index.php?page=twotales">TwoTales</a>
-    <a href="index.php?page=admin">admin</a>
-  </div>
-  <div class="nav-toggle">Menu</div>
-</nav> -->
-</header>
+  </nav> -->
