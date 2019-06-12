@@ -701,6 +701,7 @@ main {
   .upload_manieren_container {
     flex-direction: column;
     align-items: center;
+    max-width: 40rem;
   }
 
   .vr_of {

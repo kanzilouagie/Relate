@@ -104,15 +104,6 @@ $('#list1').scroll( function() {
 </div>
 </section>
 
-<section class="twotales_link">
-  <div class="twotales_link_text">
-
-  </div>
-  <div class="twotales_link_button">
-    <button> let's go!</button>
-  </div>
-</section>
-
 <section class="upload_manieren">
   <div class="upload_manieren_flex">
 
