@@ -88,6 +88,13 @@
   margin-bottom: -2rem;
 }
 
+.navlinks svg {
+  padding-top: 1rem;
+}
+
+.navlinks svg:hover {
+  fill: #ef4352;
+}
 /* Home section */
 
 .home {
