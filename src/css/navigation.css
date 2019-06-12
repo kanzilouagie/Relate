@@ -171,10 +171,16 @@
     width: 100%;
     font-size: 3rem;
     padding: 20px;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .nav div.media_button {
     display: block;
+  }
+
+  .admin_li {
+    margin-top: 20%;
   }
 }
 
