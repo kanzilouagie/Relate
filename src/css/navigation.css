@@ -89,12 +89,14 @@
 }
 
 .navlinks svg {
-  padding-top: 1rem;
+  padding: .2rem;
 }
 
-.navlinks svg:hover {
-  fill: #ef4352;
+.admin_li {
+  display: flex;
+  align-items: center;
 }
+
 /* Home section */
 
 .home {
@@ -431,4 +433,22 @@
   .myP {
     padding: 2%;
   }
+}
+
+.admin_icon {
+  background-color: #ef4352;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 8rem;
+  height: 40px;
+  width: 50px;
+}
+
+.admin_icon:hover {
+  background-color: white;
+}
+
+.admin_icon:hover svg {
+  fill: #ef4352;
 }

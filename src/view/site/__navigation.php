@@ -10,7 +10,7 @@
                     <li><a href="index.php?page=home">Home</a></li>
                     <li><a href="index.php?page=verhalen">Verhalen</a></li>
                     <li><a href="index.php?page=twotales">TwoTales</a></li>
-                    <li><a href="index.php?page=admin"><svg width="30px" height="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <li class="admin_li"><a href="index.php?page=admin"><div class="admin_icon"><svg width="30px" height="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 474.565 474.565" style="enable-background:new 0 0 474.565 474.565;" xml:space="preserve">
 <g>
 	<path d="M255.204,102.3c-0.606-11.321-12.176-9.395-23.465-9.395C240.078,95.126,247.967,98.216,255.204,102.3z"/>
@@ -76,7 +76,7 @@
 </g>
 <g>
 </g>
-</svg>
+</svg></div>
 </a></li>
                 </ul>
             </div>
