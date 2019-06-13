@@ -859,61 +859,6 @@ main {
   width: 100%;
 }
 
-.twotale_flex {
-  display: flex;
-  margin-bottom: -2rem;
-}
-
-#list1,
-#list2 {
-  height: 70vh;
-  width: 100%;
-  display: inline-block;
-  border: none;
-  background: white;
-  overflow-y: scroll;
-}
-
-#list1 {
-  background-color: #ef4352;
-}
-
-#list2 {
-  background-color: #232222;
-}
-
-#list2 .gutter img {
-  height: 70vh;
-  justify-self: start;
-  /* position: absolute;
-  left: 0;
-  float: left; */
-}
-
-#list1 .gutter img {
-  height: 70vh;
-  justify-self: end; /* position: absolute;
-  left: 0;
-  float: left; */
-}
-
-.disable-scrollbars::-webkit-scrollbar {
-  width: 0;
-  background: transparent; /* Chrome/Safari/Webkit */
-}
-
-.disable-scrollbars {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
-
-.twotale_title {
-  position: absolute;
-  top: 18%;
-  left: 4%;
-  z-index: 9999;
-}
-
 .twotale_title .vr_text .vr_responsive {
   background-color: white;
 }
