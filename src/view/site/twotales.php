@@ -24,7 +24,7 @@
       </div>
       <div class="twotales_box">
         <a class="twotales_box__link" href="index.php?page=twotales_detail&id=2">
-          <img src="./assets/images/preview_tale2.jpg" alt="preview 1">
+          <img src="./assets/images/preview_tale2.jpg" alt="preview 2">
           <div class="box_tales">
             <p class="box_tales__title">Madama Butterfly</p>
             <hr />
@@ -34,11 +34,11 @@
       </div>
       <div class="twotales_box">
         <a class="twotales_box__link" href="index.php?page=twotales_detail&id=3">
-          <img src="./assets/images/preview_tale1.png" alt="preview 1">
+          <img src="./assets/images/preview_tale3.jpg" alt="preview 3">
           <div class="box_tales">
-            <p class="box_tales__title">Macbeth</p>
+            <p class="box_tales__title">Sleeping Beauty</p>
             <hr />
-            <p class="box_tales__relates">Cheima</p>
+            <p class="box_tales__relates">Armin</p>
           </div>
         </a>
       </div>

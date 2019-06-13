@@ -253,16 +253,14 @@ class SiteController extends Controller{
             } else {
               $data['anonymous'] = 1;
             }
-            $data = array(
-              'name' => $_POST['fullname'],
-              'email' => $_POST['email'],
-              'type' => "text",
-              'story_name' => $_POST['char_name'],
-              'story_content' => $_POST['story'],
-              'published' => "false",
-              'relates' => 0,
-              'text_pic' => $fileName
-            );
+            $data['name'] = $_POST['fullname'];
+              $data['email'] = $_POST['email'];
+              $data['type'] = "text";
+              $data['story_name'] = $_POST['char_name'];
+              $data['story_content'] = $_POST['story'];
+              $data['published'] = "false";
+              $data['relates'] = 0;
+              $data['text_pic'] = $fileName;
             $verhaalDAO->insert($data);
             header("Location: index.php?page=twotales");
           } else {

@@ -11,30 +11,33 @@
 <form autocomplete="off" class="form-flex" method="POST" enctype="multipart/form-data">
 <input class="hidden">
   <div>
-    <label class="titlelabel" for="char_name"><span class="outline">Hi,</span> mijn verhaal heet</label>
-    <input class="inputtitle" type="text" name="char_name">
+    <div>
+      <label class="titlelabel" for="char_name">De titel van mijn verhaal is</label>
+      <input class="inputtitle" type="text" name="char_name">
+    </div>
+    <div>
+      <label class="namelabel" for="name">Gemaakt door</label>
+      <input class="inputname" type="text" name="fullname">
+    </div>
+    <p class="textforadd">Begin met je verhaal door even de personages aan te kaarten en jouw eigen verhaal te situeren.</p>
   </div>
 
   <div>
-    <label class="namelabel" for="name">Door</label>
-    <input class="inputname" type="text" name="fullname">
+    <label class="maillabel" for="story">Jouw Verhaal</label>
+    <textarea class="textareainput" placeholder="Er was eens..." name="story" cols="30" rows="10"></textarea>
   </div>
-
-  <p class="textforadd">Begin met je verhaal door even de personages aan te kaarten en jouw eigen verhaal te situeren.</p>
-
-  <label class="maillabel" for="story">Jouw Verhaal</label>
-  <textarea class="textareainput" placeholder="Er was eens..." name="story" cols="30" rows="10"></textarea>
-
   <div class="mailanonym">
   <div>
+
+  <div class="upload-btn-wrapper">
+      <input class="addfilebtn" type="file" name="file">
+      <button class="filebtnreplace">Kies een omslagfoto</button>
+    </div>
     <div>
       <label class="maillabel" for="email">email</label>
       <input class="inputname inputmail" type="email" name="email">
     </div>
-    <div class="upload-btn-wrapper">
-      <input class="addfilebtn" type="file" name="file">
-      <button class="filebtnreplace">Kies een foto</button>
-    </div>
+
   </div>
   <div class="checkandsub">
     <div>
