@@ -3,9 +3,9 @@
 <section class="black-bg">
 <div class="backrgound_tabbar">
   <div class="tabbar">
-    <a class="tabbartitle activebro" href="index.php?page=text_upload">write it</a>
-    <a class="tabbartitle" href="index.php?page=audio_upload">record it</a>
-    <a class="tabbartitle" href="index.php?page=video_upload">film it</a>
+    <a class="tabbartitle activebro" href="index.php?page=text_upload">Schrijf het</a>
+    <a class="tabbartitle" href="index.php?page=audio_upload">Neem het  op</a>
+    <a class="tabbartitle" href="index.php?page=video_upload">film het</a>
   </div>
 </div>
 <form autocomplete="off" class="form-flex" method="POST" enctype="multipart/form-data">

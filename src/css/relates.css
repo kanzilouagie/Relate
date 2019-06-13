@@ -59,7 +59,7 @@
 
 .gutter_text {
   width: 100%;
-  padding: 4rem;
+  padding: 8rem;
   position: absolute;
   color: white;
   top: 0;
@@ -69,6 +69,7 @@
     line-height: 2.3rem;
     padding-bottom: 2rem;
     max-width: 40rem;
+    font-size: 2rem;
   }
 }
 
@@ -106,11 +107,12 @@
 .gutter_text__title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: 'monumentExtended_Regular', sans-serif;
   padding-bottom: 3rem;
 
   & span {
+    font-family: 'monumentExtended_Ultrabold', sans-serif;
     display: block;
     color: transparent;
     -webkit-text-stroke-width: 1px;
@@ -124,7 +126,7 @@
 
 .gutter_title_right_1 {
   width: 30rem;
-  height: 12rem;
+  height: 14rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -147,7 +149,8 @@
   align-items: center;
 }
 
-.gutter_right_quote img, .gutter_left_quote img {
+.gutter_right_quote img,
+.gutter_left_quote img {
   height: 4rem !important;
   width: auto;
 

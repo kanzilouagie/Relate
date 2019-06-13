@@ -99,7 +99,6 @@
 .textareainput {
   outline: none;
   background-color: #232222;
-  border-radius: 2rem;
   border: none;
   color: white;
   padding: 2rem;
@@ -128,7 +127,6 @@
   font-size: 1.5rem;
   cursor: pointer;
   align-self: flex-end;
-  border-radius: 2rem;
   padding-bottom: 1.5rem;
   margin-top: 1rem;
 }
@@ -165,7 +163,6 @@
   font-size: 1.5rem;
   cursor: pointer;
   align-self: flex-end;
-  border-radius: 2rem;
   padding-bottom: 1.5rem;
 }
 

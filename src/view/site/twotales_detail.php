@@ -31,7 +31,7 @@
   <section class="twotale_flex">
 
     <div id="list1" class="disable-scrollbars">
-      <div class="gutter">
+      <div class="gutter gutter_bg_image_left_1">
         <img src="./assets/images/twotales/relates/<?php echo $relate['opera_img1'] ?>" alt="">
         <div class="gutter_text">
           <div class="gutter_title_left_1">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div class="gutter">
+      <div class="gutter gutter_bg_image_left_2">
         <img src="./assets/images/twotales/relates/<?php echo $relate['opera_img2'] ?>" alt="">
         <div class="gutter_text">
           <div class="gutter_title_left_1">
