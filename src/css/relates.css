@@ -1,3 +1,23 @@
 .relates_main {
   padding-top: 8rem;
 }
+
+#list1 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#list1 .gutter {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.gutter_text {
+  position: absolute;
+  color: white;
+  top: 0;
+}
