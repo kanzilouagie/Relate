@@ -58,10 +58,40 @@
 }
 
 .gutter_text {
+  width: 100%;
   padding: 4rem;
   position: absolute;
   color: white;
   top: 0;
+
+  & p {
+    font-family: 'gotham_narrow_book', sans-serif;
+    line-height: 2.3rem;
+    padding-bottom: 2rem;
+    max-width: 40rem;
+  }
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+
+  & .gutter_hr {
+    background: white;
+    width: 100%;
+  }
+}
+
+.gutter_hr {
+  background-color: #232222;
+  height: 1px;
+  max-width: 20rem;
+  margin-bottom: 2rem;
 }
 
 .gutter {
@@ -71,4 +101,54 @@
 
 .gutter img {
   height: 60% !important;
+}
+
+.gutter_text__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'monumentExtended_Regular', sans-serif;
+  padding-bottom: 3rem;
+
+  & span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+  }
+}
+
+.highlight {
+  font-family: 'gotham_narrow_black', sans-serif;
+}
+
+.gutter_title_right_1 {
+  width: 30rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.gutter_right_quote {
+  font-family: 'gotham_narrow_book', sans-serif;
+  font-style: oblique;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gutter_right_quote img {
+  height: 4rem !important;
+  width: auto;
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.gutter_right_quote .quote {
+  padding-bottom: 0 !important;
+  padding-right: 2rem;
 }
