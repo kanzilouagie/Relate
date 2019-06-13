@@ -251,17 +251,6 @@ scroll
   color: white;
 }
 
-@media only screen and (max-width: 700px) {
-
-  .stats {
-    flex-direction: column;
-  }
-
-  .stats_image_red {
-    display: none;
-  }
-}
-
 .stats_image {
   height: 20vh;
   background-color: #ef4352;
@@ -916,4 +905,26 @@ main {
 
 .twotale_title .vr_text .vr_responsive {
   background-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .stats_image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .social_logos {
+    flex-direction: row;
+  }
+
+  .social_logos a {
+    margin-right: 1rem;
+  }
 }
