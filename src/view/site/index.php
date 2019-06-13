@@ -30,10 +30,11 @@ $('#list1').scroll( function() {
       <h1>Can you <br> <span>relate</span></h1>
       <div class="vr_text">
         <div class="vr_responsive">&nbsp;</div>
-        <p class="subtext">Je denkt misschien dat Opera & Ballet jou niet raakt, dan heb je het goed mis!</p>
+
+        <p class="subtext">Je denkt misschien dat <span class="highlight">Opera & Ballet</span> jou niet <span class="highlight">raakt</span>, dan heb je het goed <span class="highlight">mis!</span></p>
       </div>
       <div class="cant_wait">
-        <p>Kan je niet wachten? </p>
+
         <a href="index.php?page=twotales"><button>ontdek waarom <img width="8px" src="./assets/images/arrow.svg" alt=""></button>
 </a>
       </div>
