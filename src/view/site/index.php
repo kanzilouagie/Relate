@@ -34,7 +34,8 @@ $('#list1').scroll( function() {
       </div>
       <div class="cant_wait">
         <p>Kan je niet wachten? </p>
-        <button>ontdek waarom <img width="8px" src="./assets/images/arrow.svg" alt=""></button>
+        <a href="index.php?page=twotales"><button>ontdek waarom <img width="8px" src="./assets/images/arrow.svg" alt=""></button>
+</a>
       </div>
     </div>
     <img class="fold_black_img" src="./assets/images/header_Home.png" alt="" >
@@ -172,6 +173,8 @@ $('#list1').scroll( function() {
         </div>
 
       </div>
+
+      <a href="index.php?page=verhalen">Bekijk de andere inzendingen.</a>
   </div>
 </section>
 

@@ -7,7 +7,7 @@
     <h1>Eigen verhalen</h1>
     <div class="vr_text">
         <div class="vr_responsive">&nbsp;</div>
-        <p class="subtext">Eenzelfde kern.</p>
+        <p class="subtext">Wil je jou verhaal met ons delen en kans maken om deel te zijn van het Opera & Ballet? Bekijk de inzendingen hieronder</p>
     </div>
   </div>
   <div class="verhalen_filter">
