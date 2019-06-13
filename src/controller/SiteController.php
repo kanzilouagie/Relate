@@ -295,6 +295,14 @@ class SiteController extends Controller{
     }
   }
 
+  public function twotales_detail() {
+    $this->set('backgroundcolor', '');
+    $relatesDAO = new VerhaalDAO();
+    $id = $_GET['id'];
+    $relate = $relatesDAO->selectRelates($id);
+    $this->set('relate', $relate);
+  }
+
 
 
 }

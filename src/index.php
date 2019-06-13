@@ -56,6 +56,10 @@
     'detail' => array(
       'controller' => 'Site',
       'action' => 'detail'
+    ),
+    'twotales_detail' => array(
+      'controller' => 'Site',
+      'action' => 'twotales_detail'
     )
 
     );

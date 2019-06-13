@@ -8,7 +8,7 @@
   <section>
     <div class="twotales_grid">
     <div class="twotales_box">
-        <a class="twotales_box__link" href="#">
+        <a class="twotales_box__link" href="index.php?page=twotales_detail&id=1">
           <img src="./assets/images/preview_tale1.png" alt="preview 1">
           <div class="box_tales">
             <p class="box_tales__title">Macbeth</p>
@@ -18,7 +18,7 @@
         </a>
       </div>
       <div class="twotales_box">
-        <a class="twotales_box__link" href="#">
+        <a class="twotales_box__link" href="index.php?page=twotales_detail&id=2">
           <img src="./assets/images/preview_tale1.png" alt="preview 1">
           <div class="box_tales">
             <p class="box_tales__title">Macbeth</p>
@@ -28,7 +28,7 @@
         </a>
       </div>
       <div class="twotales_box">
-        <a class="twotales_box__link" href="#">
+        <a class="twotales_box__link" href="index.php?page=twotales_detail&id=3">
           <img src="./assets/images/preview_tale1.png" alt="preview 1">
           <div class="box_tales">
             <p class="box_tales__title">Macbeth</p>
@@ -38,7 +38,7 @@
         </a>
       </div>
       <div class="twotales_box">
-        <a class="twotales_box__link" href="#">
+        <a class="twotales_box__link" href="index.php?page=twotales_detail&id=4">
           <img src="./assets/images/preview_tale1.png" alt="preview 1">
           <div class="box_tales">
             <p class="box_tales__title">Macbeth</p>
