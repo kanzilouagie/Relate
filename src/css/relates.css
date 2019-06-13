@@ -139,7 +139,15 @@
   align-items: center;
 }
 
-.gutter_right_quote img {
+.gutter_left_quote {
+  font-family: 'gotham_narrow_book', sans-serif;
+  font-style: oblique;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gutter_right_quote img, .gutter_left_quote img {
   height: 4rem !important;
   width: auto;
 
@@ -151,4 +159,9 @@
 .gutter_right_quote .quote {
   padding-bottom: 0 !important;
   padding-right: 2rem;
+}
+
+.gutter_left_quote .quote {
+  padding-bottom: 0 !important;
+  padding-left: 2rem;
 }

@@ -47,11 +47,14 @@
         <img src="./assets/images/twotales/relates/<?php echo $relate['opera_img2'] ?>" alt="">
         <div class="gutter_text">
           <div class="gutter_title_left_1">
-            <h2 class="gutter_text__title"><?php echo $relate['title_opera'] ?></h2>
-            <div class="gutter_hr"></div>
+            <h2 class="gutter_text__title"></h2>
           </div>
           <div class="gutter_body_left_1">
-            <p class="gutter_text__text"><?php echo $relate['opera_text1'] ?></p>
+            <p class="gutter_text__text"><?php echo $relate['opera_text2'] ?></p>
+          </div>
+          <div class="gutter_left_quote">
+          <img src="./assets/images/quote_sign.png" alt="quote_sign">
+            <p class="quote"><?php echo $relate['story_quote'] ?></p>
           </div>
         </div>
       </div>
@@ -60,11 +63,10 @@
         <img src="./assets/images/twotales/relates/<?php echo $relate['opera_img3'] ?>" alt="">
         <div class="gutter_text">
           <div class="gutter_title_left_1">
-            <h2 class="gutter_text__title"><?php echo $relate['title_opera'] ?></h2>
-            <div class="gutter_hr"></div>
+            <h2 class="gutter_text__title"></h2>
           </div>
           <div class="gutter_body_left_1">
-            <p class="gutter_text__text"><?php echo $relate['opera_text1'] ?></p>
+            <p class="gutter_text__text"><?php echo $relate['opera_text3'] ?></p>
           </div>
         </div>
       </div>
@@ -75,15 +77,10 @@
         <img src="./assets/images/twotales/relates/<?php echo $relate['story_img3'] ?>" alt="">
         <div class="gutter_text right">
           <div class="gutter_title_right_1">
-            <h2 class="gutter_text__title"><?php echo $relate['title_story'] ?></h2>
-            <div class="gutter_hr"></div>
+            <h2 class="gutter_text__title"></h2>
           </div>
           <div class="gutter_body_right_1">
-            <p class="gutter_text__text"><?php echo $relate['story_text1'] ?></p>
-          </div>
-          <div class="gutter_right_quote">
-            <p class="quote"><?php echo $relate['story_quote'] ?></p>
-            <img src="./assets/images/quote_sign.png" alt="quote_sign">
+            <p class="gutter_text__text"><?php echo $relate['story_text3'] ?></p>
           </div>
         </div>
       </div>
@@ -92,15 +89,10 @@
         <img src="./assets/images/twotales/relates/<?php echo $relate['story_img2'] ?>" alt="">
         <div class="gutter_text right">
           <div class="gutter_title_right_1">
-            <h2 class="gutter_text__title"><?php echo $relate['title_story'] ?></h2>
-            <div class="gutter_hr"></div>
+            <h2 class="gutter_text__title"></h2>
           </div>
           <div class="gutter_body_right_1">
-            <p class="gutter_text__text"><?php echo $relate['story_text1'] ?></p>
-          </div>
-          <div class="gutter_right_quote">
-            <p class="quote"><?php echo $relate['story_quote'] ?></p>
-            <img src="./assets/images/quote_sign.png" alt="quote_sign">
+            <p class="gutter_text__text"><?php echo $relate['story_text2'] ?></p>
           </div>
         </div>
       </div>
