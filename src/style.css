@@ -256,7 +256,7 @@ scroll
     flex-direction: column;
   }
 
-  .stats_image {
+  .stats_image_red {
     display: none;
   }
 }
