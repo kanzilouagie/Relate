@@ -15,6 +15,9 @@ class SiteController extends Controller{
     $verhalen = $verhaalDAO->selectAll();
     $this->set('verhalen', $verhalen);
     $this->set('activestate','class="active"');
+    $relate = $verhaalDAO->selectRelates(rand(1, 3));
+
+    $this->set('relate', $relate);
   }
 
   public function verhalen(){

@@ -117,6 +117,53 @@
 
   </section>
 
+  <section class="upload_manieren">
+  <div class="upload_manieren_flex">
+
+  <div class="can_you_relate">
+    <div><p class="">Nu zie je dat verhalen uit <span>opera & ballet</span> niet zo ver weg liggen.</p></div>
+    <div>
+      <h2>Can you</h2>
+      <h2 class="h2_relate">Relate?</h2>
+    </div>
+    <div><p class="">Voel je je betrokken? <span>Dan is het tijd om ons jouw verhaal te vertellen </span>adv. onderstaande upload methodes.</p>
+    </div>
+    </div>
+
+      <div class="upload_manieren_container">
+        <div class="upload_manier_logo_text">
+          <img  src="./assets/images/relate_Schrijven.png" alt="" height="150px">
+          <p class="upload_manier_logo_subtext">Schrijf het</p>
+        </div>
+
+        <div  class="vr_of">
+          <div class="vr_of_line">&nbsp;</div>
+          <p>OF</p>
+          <div class="vr_of_line">&nbsp;</div>
+        </div>
+
+        <div class="upload_manier_logo_text">
+          <img  src="./assets/images/relate_Opnemen.png" alt="" height="150px">
+          <p class="upload_manier_logo_subtext">Schrijf het</p>
+        </div>
+
+        <div  class="vr_of">
+          <div class="vr_of_line">&nbsp;</div>
+          <p>OF</p>
+          <div class="vr_of_line">&nbsp;</div>
+        </div>
+
+        <div class="upload_manier_logo_text">
+          <img  src="./assets/images/relate_filmen.png" alt="" height="150px">
+          <p class="upload_manier_logo_subtext">Schrijf het</p>
+        </div>
+
+      </div>
+
+      <a href="index.php?page=verhalen">Bekijk de andere inzendingen.</a>
+  </div>
+</section>
+
 </main>
 <!-- <?php echo $relate['title_opera'] ?>
 <?php echo $relate['opera_text1'] ?>
