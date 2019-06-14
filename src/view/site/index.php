@@ -35,8 +35,7 @@ $('#list1').scroll( function() {
       </div>
       <div class="cant_wait">
 
-        <a href="index.php?page=twotales"><button>ontdek waarom <img width="8px" src="./assets/images/arrow.svg" alt=""></button>
-</a>
+        <a href="index.php?page=twotales"><button>ontdek waarom <img width="8px" src="./assets/images/arrow.svg" alt=""></button></a>
       </div>
     </div>
     <img class="fold_black_img" src="./assets/images/header_Home.png" alt="" >
@@ -76,20 +75,11 @@ $('#list1').scroll( function() {
    <img class="stats_image_red" src="./assets/images/stats_image.png" alt="" >
   </div>
   <div class="stats_text">
-    <div>
-      <p>Upload methodes:</p>
-      <p class="stats_aantal">3</p>
-    </div>
-    <div class="vr">&nbsp;</div>
-    <div>
-      <p>Relates:</p>
-      <p class="stats_aantal">4</p>
-    </div>
-    <div class="vr">&nbsp;</div>
-    <div>
-      <p>Eigen Verhalen:</p>
-      <p class="stats_aantal"><?php echo count($verhalen);?></p>
-    </div>
+  <h1><span>2</span>tales<br><span>1</span>story </h1>
+
+  <p class="subtext">Op het eerste gezicht zou je misschien denken dat de verhalenin het <span class="highlight">Opera & Ballet geen verband</span> hebben met de verhalen die we dagdagelijks meemaken, maar toch hebben ze betrekking met elkaar.</p>
+
+
 
   </div>
 </section>
@@ -197,10 +187,12 @@ $('#list1').scroll( function() {
     </div>
 
       <div class="upload_manieren_container">
+        <a href="index.php?page=text_upload">
         <div class="upload_manier_logo_text">
           <img  src="./assets/images/relate_Schrijven.png" alt="" height="150px">
           <p class="upload_manier_logo_subtext">Schrijf het</p>
         </div>
+        </a>
 
         <div  class="vr_of">
           <div class="vr_of_line">&nbsp;</div>
@@ -208,10 +200,12 @@ $('#list1').scroll( function() {
           <div class="vr_of_line">&nbsp;</div>
         </div>
 
+        <a href="index.php?page=audio_upload">
         <div class="upload_manier_logo_text">
           <img  src="./assets/images/relate_Opnemen.png" alt="" height="150px">
           <p class="upload_manier_logo_subtext">Schrijf het</p>
         </div>
+        </a>
 
         <div  class="vr_of">
           <div class="vr_of_line">&nbsp;</div>
@@ -219,14 +213,16 @@ $('#list1').scroll( function() {
           <div class="vr_of_line">&nbsp;</div>
         </div>
 
+        <a href="index.php?page=video_upload">
         <div class="upload_manier_logo_text">
           <img  src="./assets/images/relate_filmen.png" alt="" height="150px">
           <p class="upload_manier_logo_subtext">Schrijf het</p>
         </div>
+        </a>
 
       </div>
 
-      <a href="index.php?page=verhalen">Bekijk de andere inzendingen.</a>
+      <a class="upload_manier_logo_a" href="index.php?page=verhalen">Bekijk de andere inzendingen.</a>
   </div>
 </section>
 

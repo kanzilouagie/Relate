@@ -28,7 +28,9 @@
 
 <main class="relates_main">
 
+
   <section class="twotale_flex">
+
 
     <div id="list1" class="disable-scrollbars">
       <div class="gutter gutter_bg_image_left_1">

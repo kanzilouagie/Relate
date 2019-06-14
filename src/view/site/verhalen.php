@@ -5,10 +5,11 @@
   <div class="eigen_verhalen">
   <div class="verhaal_title">
 
-    <h1><span>Eigen</span> verhalen</h1>
+    <h1>verhalen</h1>
     <div class="vr_text">
         <div class="vr_responsive">&nbsp;</div>
-        <p class="subtext">Wil je jou verhaal met ons delen en kans maken om deel te zijn van het Opera & Ballet? Bekijk de inzendingen hieronder</p>
+
+        <p class="subtext">Wil je jou verhaal met ons delen en kans maken om deel te zijn van het  <span class="highlight">Opera & Ballet</span>? Bekijk de inzendingen hieronder.</p>
     </div>
   </div>
   <div class="verhalen_filter">

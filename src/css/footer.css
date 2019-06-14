@@ -92,7 +92,8 @@ svg:hover {
 
 .footer_links a,
 .footer_navigatie a {
-  font-family: 'gotham_medium';
+  font-family: 'monumentExtended_Regular';
+  line-height: 3rem;
   color: #ef4352;
   text-decoration: none;
 }

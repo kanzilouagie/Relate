@@ -48,6 +48,7 @@
 .subtext {
   font-family: 'gotham_narrow_book';
   font-size: 2rem;
+  line-height: 3rem;
   color: white;
   max-width: 60rem;
 }
@@ -164,7 +165,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 8rem;
+  margin-left: 8rem;
+  margin-bottom: 4rem;
 }
 
 .social_logos .footer_logos_img {
@@ -279,8 +281,8 @@ scroll
 }
 
 .stats_text p {
-  color: #ef4352;
-  font-size: 1.4rem;
+  color: white;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -736,8 +738,13 @@ main {
   padding-top: 10rem;
 }
 
-.upload_manieren_flex a {
+.upload_manier_logo_a {
   margin-top: 4rem;
+  color: white;
+}
+
+.upload_manieren_flex a {
+  text-decoration: none;
   color: white;
 }
 
@@ -958,4 +965,8 @@ main {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+}
+
+.footer_logo img {
+  width: 10rem;
 }

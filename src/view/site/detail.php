@@ -2,6 +2,7 @@
 <main>
   <section class="main_detail">
   <button class="toggle_menu hidden"></button>
+  <a class="back_button" href="index.php?page=verhalen">Ga terug.</a>
     <article class="article_detail">
 
     <?php if($verhaal['type'] == "text") { ?>

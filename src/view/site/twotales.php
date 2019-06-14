@@ -1,7 +1,8 @@
 <?php include '__navigation.php'?>
 <main class="twotale_main">
   <section class="twotale_main__header">
-    <h1><span>2</span>Tales</h1>
+
+    <h1>Relates</h1>
 
     <div class="vr_text">
         <div class="vr_responsive">&nbsp;</div>
@@ -46,9 +47,9 @@
         <a class="twotales_box__link" href="index.php?page=twotales_detail&id=4">
           <img src="./assets/images/preview_tale1.png" alt="preview 1">
           <div class="box_tales">
-            <p class="box_tales__title">Macbeth</p>
+            <p class="box_tales__title">Romeo</p>
             <hr />
-            <p class="box_tales__relates">Cheima</p>
+            <p class="box_tales__relates">Omer</p>
           </div>
         </a>
       </div>

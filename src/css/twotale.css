@@ -109,6 +109,8 @@
 }
 
 .box_tales__relates {
+  font-family: 'monumentExtended_Ultrabold';
+
   font-weight: bold;
   font-size: 3rem;
   -webkit-text-stroke-width: 1px;
