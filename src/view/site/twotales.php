@@ -45,7 +45,7 @@
       </div>
       <div class="twotales_box">
         <a class="twotales_box__link" href="index.php?page=twotales_detail&id=4">
-          <img src="./assets/images/preview_tale1.png" alt="preview 1">
+          <img src="./assets/images/preview_tale4.jpg" alt="preview 1">
           <div class="box_tales">
             <p class="box_tales__title">Romeo</p>
             <hr />
