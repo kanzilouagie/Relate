@@ -290,3 +290,17 @@
 
 .right_filter {
 }
+
+@media screen and (max-width: 500px) {
+
+  h1 {
+    font-size: 4rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  h1 {
+    font-size: 3rem !important;
+  }
+}
