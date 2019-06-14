@@ -126,6 +126,10 @@ body {
 .fold_text {
   margin-left: 8rem;
   max-width: 50rem;
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 2rem;
+  }
 }
 
 .fold_text button {
@@ -278,6 +282,13 @@ scroll
   background-color: #232222;
   height: 20vh;
   width: 100%;
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    height: 30rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
 }
 
 .stats_text p {
@@ -341,6 +352,10 @@ h1 {
   /* margin: 2rem 0; */
   color: white;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
 }
 
 h1 span {
@@ -744,6 +759,7 @@ main {
 }
 
 .upload_manieren_flex a {
+  padding-top: 3rem;
   text-decoration: none;
   color: white;
 }
