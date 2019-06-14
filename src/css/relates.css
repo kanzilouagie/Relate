@@ -71,6 +71,17 @@
     max-width: 40rem;
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: 800px) {
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    & p {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+  }
 }
 
 .right {
@@ -118,6 +129,10 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
   }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2rem;
+  }
 }
 
 .highlight {
@@ -131,6 +146,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media only screen and (max-width: 800px) {
+    height: 7rem;
+  }
 }
 
 .gutter_right_quote {
